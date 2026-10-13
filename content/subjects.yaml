@@ -1,0 +1,6 @@
+# Display names and order of subjects. A note's subject defaults to its folder name.
+# Subjects not listed here still work; they are shown title-cased after these.
+economics: Economics
+game-theory: Game Theory
+biology: Biology
+machine-learning: Machine Learning

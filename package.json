@@ -1,0 +1,29 @@
+{
+  "name": "research-review",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A phone study app for retaining what I learn during research",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "npm run check && tsc --noEmit && vite build",
+    "preview": "vite preview --host",
+    "check": "node scripts/check-content.js",
+    "icons": "pwa-assets-generator --preset minimal-2023 public/favicon.svg"
+  },
+  "dependencies": {
+    "katex": "^0.18.10",
+    "preact": "^11.0.1",
+    "ts-fsrs": "^5.4.2"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.10.6",
+    "@vite-pwa/assets-generator": "^2.0.0",
+    "marked": "^18.1.1",
+    "marked-katex-extension": "^5.1.13",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4",
+    "vite-plugin-pwa": "^2.0.0",
+    "yaml": "^2.9.1"
+  }
+}
