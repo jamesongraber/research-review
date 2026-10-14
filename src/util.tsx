@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'preact/hooks';
 
 /** Pre-rendered HTML from the build step (our own content, so trusted). */
-export function Html({ html, class: cls }: { html: string; class?: string }) {
-  return <div class={cls} dangerouslySetInnerHTML={{ __html: html }} />;
+export function Html({ html, class: cls, inline }: { html: string; class?: string; inline?: boolean }) {
+  const Tag = inline ? 'span' : 'div';
+  return <Tag class={cls} dangerouslySetInnerHTML={{ __html: html }} />;
 }
 
 export function formatInterval(ms: number) {

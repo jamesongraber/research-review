@@ -555,3 +555,70 @@ main:has(.review) {
   font-size: 1.3rem;
   line-height: 1.2;
 }
+
+/* Link from an answered card or quiz question to the note section that explains it */
+.more-link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 4px 12px;
+  margin-top: 14px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-size: 0.9rem;
+}
+.more-link > span:first-child {
+  font-weight: 600;
+}
+.more-link .target {
+  color: var(--text);
+}
+
+/* Article sections reached through a "Full explanation" link */
+.article h3,
+.article h4 {
+  scroll-margin-top: calc(16px + env(safe-area-inset-top));
+}
+.article .target {
+  animation: flash 2s ease-out;
+}
+@keyframes flash {
+  from {
+    background: var(--accent-soft);
+    box-shadow: 0 0 0 8px var(--accent-soft);
+  }
+}
+
+/* Resume bar: visible while a review session is unfinished */
+.resume-bar {
+  position: fixed;
+  left: 12px;
+  right: 12px;
+  bottom: calc(var(--tabbar) + 10px + env(safe-area-inset-bottom));
+  max-width: 696px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 12px;
+  background: var(--accent);
+  color: var(--accent-text);
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+}
+.resume-bar .label {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.resume-bar .go {
+  flex: none;
+}
+main.with-resume {
+  padding-bottom: calc(var(--tabbar) + 90px + env(safe-area-inset-bottom));
+}

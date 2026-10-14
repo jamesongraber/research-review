@@ -11,6 +11,34 @@ import markedKatex from 'marked-katex-extension';
 
 const marked = new Marked({ gfm: true });
 marked.use(markedKatex({ throwOnError: true, nonStandard: true, output: 'html' }));
+// Article subheadings get ids so cards and quiz questions can link to a section (`See:` lines).
+marked.use({
+  renderer: {
+    heading({ tokens, depth, text }) {
+      const inner = this.parser.parseInline(tokens);
+      const id = depth >= 3 ? ` id="${slugify(text)}"` : '';
+      return `<h${depth}${id}>${inner}</h${depth}>\n`;
+    },
+  },
+});
+
+export function slugify(text) {
+  return text
+    .toLowerCase()
+    .replace(/\\[a-z]+/g, (cmd) => cmd.slice(1))
+    .replace(/[^\p{L}\p{N}]+/gu, '-')
+    .replace(/^-+|-+$/g, '');
+}
+
+/** Slug -> heading text for the article's ### and #### headings. */
+function headingSlugs(article) {
+  const out = new Map();
+  for (const line of article.split('\n')) {
+    const m = line.match(/^#{3,4}\s+(.+?)\s*$/);
+    if (m) out.set(slugify(m[1]), m[1]);
+  }
+  return out;
+}
 
 const SECTION_RE = /^##\s+(.+?)\s*$/;
 const SECTIONS = ['article', 'cards', 'quiz'];
@@ -97,26 +125,29 @@ function splitQuestions(text, section) {
 }
 
 function parseCard(lines) {
-  const fields = { Q: [], A: [] };
+  const fields = { Q: [], A: [], See: [] };
   let field = null;
   for (const line of lines) {
-    const m = line.match(/^([QA]):\s?(.*)$/);
+    const m = line.match(/^(Q|A|See):\s?(.*)$/);
     if (m) {
       field = m[1];
       if (fields[field].length) throw new Error(`card has two "${field}:" lines`);
       fields[field].push(m[2]);
+    } else if (field === 'See') {
+      if (line.trim()) throw new Error('"See:" must be a single line at the end of the card');
     } else fields[field].push(line);
   }
   const q = fields.Q.join('\n').trim();
   const a = fields.A.join('\n').trim();
   if (!a) throw new Error(`card "${q.slice(0, 60)}" has no "A:" answer`);
-  return { q, a };
+  return { q, a, see: fields.See.join('').trim() };
 }
 
 function parseQuiz(lines) {
   const q = [];
   const e = [];
   const options = [];
+  let see = '';
   let field = 'Q';
   for (const line of lines) {
     let m;
@@ -126,20 +157,25 @@ function parseQuiz(lines) {
     } else if ((m = line.match(/^- \[( |x|X)\]\s+(.*)$/))) {
       options.push({ text: m[2], correct: m[1] !== ' ' });
       field = 'O';
+    } else if ((m = line.match(/^See:\s?(.*)$/))) {
+      see = m[1].trim();
+      field = 'See';
     } else if ((m = line.match(/^E:\s?(.*)$/))) {
       if (e.length) throw new Error('quiz question has two "E:" lines');
       e.push(m[1]);
       field = 'E';
     } else if (field === 'Q') q.push(line);
     else if (field === 'E') e.push(line);
-    else if (line.trim()) options[options.length - 1].text += ' ' + line.trim();
+    else if (field === 'See') {
+      if (line.trim()) throw new Error('"See:" must be a single line');
+    } else if (line.trim()) options[options.length - 1].text += ' ' + line.trim();
   }
   const question = q.join('\n').trim();
   const label = `quiz "${question.slice(0, 60)}"`;
   if (options.length < 2) throw new Error(`${label} needs at least two "- [ ]" options`);
   const nCorrect = options.filter((o) => o.correct).length;
   if (nCorrect !== 1) throw new Error(`${label} must mark exactly one option with [x] (found ${nCorrect})`);
-  return { q: question, options, e: e.join('\n').trim() };
+  return { q: question, options, e: e.join('\n').trim(), see };
 }
 
 function asStringArray(value, field) {
@@ -176,6 +212,18 @@ function parseNote(file, contentDir) {
     articleHtml: render(sections.article),
   };
 
+  const headings = headingSlugs(sections.article);
+  // A `See:` line becomes the slug of an article heading plus that heading's rendered text.
+  const resolveSee = (see, q) => {
+    if (!see) return { see: '', seeTitleHtml: '' };
+    const slug = slugify(see);
+    if (!headings.has(slug)) {
+      const known = [...headings.values()].map((h) => `"${h}"`).join(', ') || 'none';
+      throw new Error(`"See: ${see}" (under "${q.slice(0, 50)}") matches no ### heading in the article; headings are: ${known}`);
+    }
+    return { see: slug, seeTitleHtml: render(headings.get(slug), true) };
+  };
+
   const items = [];
   const seen = new Set();
   const addItem = (item, key) => {
@@ -185,11 +233,21 @@ function parseNote(file, contentDir) {
   };
 
   for (const block of splitQuestions(sections.cards ?? '', 'Cards')) {
-    const { q, a } = parseCard(block);
-    addItem({ id: `${id}:c:${hash(q)}`, noteId: id, kind: 'card', promptHtml: render(q), answerHtml: render(a) }, q);
+    const { q, a, see } = parseCard(block);
+    addItem(
+      {
+        id: `${id}:c:${hash(q)}`,
+        noteId: id,
+        kind: 'card',
+        promptHtml: render(q),
+        answerHtml: render(a),
+        ...resolveSee(see, q),
+      },
+      q,
+    );
   }
   for (const block of splitQuestions(sections.quiz ?? '', 'Quiz')) {
-    const { q, options, e } = parseQuiz(block);
+    const { q, options, e, see } = parseQuiz(block);
     addItem(
       {
         id: `${id}:q:${hash(q)}`,
@@ -198,6 +256,7 @@ function parseNote(file, contentDir) {
         promptHtml: render(q),
         options: options.map((o) => ({ html: render(o.text, true), correct: o.correct })),
         explanationHtml: e ? render(e) : '',
+        ...resolveSee(see, q),
       },
       q,
     );

@@ -1,5 +1,6 @@
 import { notes, subjects, itemById, noteById, subjectName } from '../content';
 import { dueIds, newIds, newRemainingToday, nextDue, reviewsToday, totalSeen } from '../store';
+import { loadSession } from '../session';
 import { formatInterval } from '../util';
 
 export function Today() {
@@ -9,6 +10,7 @@ export function Today() {
   const done = reviewsToday().length;
   const next = nextDue();
   const queued = [...due, ...fresh];
+  const session = loadSession('daily');
 
   const bySubject = new Map<string, number>();
   for (const id of queued) {
@@ -37,7 +39,11 @@ export function Today() {
             <span>reviewed today</span>
           </div>
         </div>
-        {queued.length > 0 ? (
+        {session ? (
+          <a class="button primary block" href="#/review">
+            Resume review · {session.queue.length - session.pos} left
+          </a>
+        ) : queued.length > 0 ? (
           <a class="button primary block" href="#/review">
             Start review · {queued.length}
           </a>

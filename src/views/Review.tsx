@@ -1,8 +1,9 @@
-import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'preact/hooks';
 import { Rating, type Grade } from 'ts-fsrs';
-import { itemById, itemsByNote, noteById, subjectName, type Item, type QuizItem } from '../content';
-import { dueIds, getCard, newIds, newRemainingToday, preview, rate } from '../store';
-import { Html, formatInterval, shuffle } from '../util';
+import { itemById, noteById, subjectName, type Item, type QuizItem } from '../content';
+import { loadSession, newSession, saveSession, sessionKey, withOrder, type Session } from '../session';
+import { getCard, preview, rate } from '../store';
+import { Html, formatInterval } from '../util';
 
 /** Items rescheduled sooner than this come back again in the same session. */
 const REQUEUE_MS = 30 * 60 * 1000;
@@ -15,41 +16,43 @@ const GRADES: { rating: Grade; label: string; cls: string }[] = [
 ];
 
 export function Review({ noteId }: { noteId?: string }) {
-  const [queue, setQueue] = useState<string[]>(() =>
-    noteId
-      ? (itemsByNote.get(noteId) ?? []).map((i) => i.id)
-      : [...shuffle(dueIds()), ...newIds().slice(0, newRemainingToday())],
-  );
-  const [pos, setPos] = useState(0);
-  const [revealed, setRevealed] = useState(false);
-  const [chosen, setChosen] = useState<number | null>(null);
-  const [reviewed, setReviewed] = useState(0);
+  // Resume the saved session if there is one; every change is saved right away, so
+  // leaving to read a note (or closing the app) and coming back picks up where it was.
+  const [s, setS] = useState<Session>(() => loadSession(sessionKey(noteId)) ?? newSession(noteId));
+  useEffect(() => saveSession(s), [s]);
   // Guards against a double tap rating the same position twice before re-render.
   const gradedPos = useRef(-1);
 
   const exit = noteId ? `#/note/${noteId}` : '#/';
-  const id = queue[pos];
+  const id = s.queue[s.pos];
   const item = id ? itemById.get(id) : undefined;
 
   function grade(rating: Grade) {
-    if (gradedPos.current === pos) return;
-    gradedPos.current = pos;
+    if (gradedPos.current === s.pos) return;
+    gradedPos.current = s.pos;
     const now = new Date();
     const card = rate(id, rating, now);
-    if (card.due.getTime() - now.getTime() < REQUEUE_MS) setQueue((q) => [...q, id]);
-    setPos((p) => p + 1);
-    setRevealed(false);
-    setChosen(null);
-    setReviewed((n) => n + 1);
+    const requeue = card.due.getTime() - now.getTime() < REQUEUE_MS;
+    setS((prev) =>
+      withOrder({
+        ...prev,
+        queue: requeue ? [...prev.queue, id] : prev.queue,
+        pos: prev.pos + 1,
+        revealed: false,
+        chosen: null,
+        order: null,
+        reviewed: prev.reviewed + 1,
+      }),
+    );
   }
 
   if (!item) {
     return (
       <div class="page review-done">
-        <h1>{reviewed ? 'Session complete' : 'Nothing to review'}</h1>
+        <h1>{s.reviewed ? 'Session complete' : 'Nothing to review'}</h1>
         <p class="muted">
-          {reviewed
-            ? `${reviewed} review${reviewed === 1 ? '' : 's'} done.`
+          {s.reviewed
+            ? `${s.reviewed} review${s.reviewed === 1 ? '' : 's'} done.`
             : 'No cards are due and today’s new cards are used up.'}
         </p>
         <a class="button primary block" href={exit}>
@@ -63,13 +66,13 @@ export function Review({ noteId }: { noteId?: string }) {
   return (
     <div class="page review">
       <header class="review-bar">
-        <a href={exit} class="close" aria-label="End session">
+        <a href={exit} class="close" aria-label="Leave review (progress is kept)">
           ✕
         </a>
         <div class="progress">
-          <div style={{ width: `${(pos / queue.length) * 100}%` }} />
+          <div style={{ width: `${(s.pos / s.queue.length) * 100}%` }} />
         </div>
-        <span class="count">{queue.length - pos}</span>
+        <span class="count">{s.queue.length - s.pos}</span>
       </header>
 
       <div class="item-meta">
@@ -79,11 +82,34 @@ export function Review({ noteId }: { noteId?: string }) {
       </div>
 
       {item.kind === 'card' ? (
-        <CardFace item={item} revealed={revealed} onReveal={() => setRevealed(true)} onGrade={grade} />
+        <CardFace
+          item={item}
+          revealed={s.revealed}
+          onReveal={() => setS((prev) => ({ ...prev, revealed: true }))}
+          onGrade={grade}
+        />
       ) : (
-        <QuizFace key={pos} item={item} chosen={chosen} onChoose={setChosen} onGrade={grade} />
+        <QuizFace
+          key={s.pos}
+          item={item}
+          order={s.order ?? item.options.map((_, i) => i)}
+          chosen={s.chosen}
+          onChoose={(i) => setS((prev) => ({ ...prev, chosen: i }))}
+          onGrade={grade}
+        />
       )}
     </div>
+  );
+}
+
+/** Link from an answered item to the note section that explains it in full. */
+function MoreLink({ item }: { item: Item }) {
+  const note = noteById.get(item.noteId)!;
+  return (
+    <a class="more-link" href={`#/note/${note.id}${item.see ? `/${item.see}` : ''}`}>
+      <span>Full explanation</span>
+      <span class="target">{item.seeTitleHtml ? <Html inline html={item.seeTitleHtml} /> : note.title} →</span>
+    </a>
   );
 }
 
@@ -120,6 +146,7 @@ function CardFace(props: { item: Item; revealed: boolean; onReveal: () => void; 
           <>
             <hr />
             <Html class="prose" html={item.answerHtml} />
+            <MoreLink item={item} />
           </>
         )}
       </article>
@@ -138,12 +165,13 @@ function CardFace(props: { item: Item; revealed: boolean; onReveal: () => void; 
 
 function QuizFace(props: {
   item: QuizItem;
+  order: number[];
   chosen: number | null;
   onChoose: (i: number) => void;
   onGrade: (r: Grade) => void;
 }) {
-  const { item, chosen, onChoose, onGrade } = props;
-  const options = useMemo(() => shuffle(item.options), [item]);
+  const { item, order, chosen, onChoose, onGrade } = props;
+  const options = order.map((i) => item.options[i]);
   const answered = chosen !== null;
   const correct = answered && options[chosen].correct;
   useKeys((key) => {
@@ -172,6 +200,7 @@ function QuizFace(props: {
           <div class={`verdict ${correct ? 'right' : 'wrong'}`}>
             <strong>{correct ? 'Correct' : 'Not quite'}</strong>
             {item.explanationHtml && <Html class="prose" html={item.explanationHtml} />}
+            <MoreLink item={item} />
           </div>
         )}
       </article>

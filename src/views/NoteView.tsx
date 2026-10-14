@@ -1,9 +1,22 @@
+import { useEffect } from 'preact/hooks';
 import { backlinks, itemsByNote, noteById, subjectName } from '../content';
+import { loadSession, sessionKey } from '../session';
 import { getCard } from '../store';
 import { Html, formatInterval } from '../util';
 
-export function NoteView({ id }: { id: string }) {
+export function NoteView({ id, section }: { id: string; section?: string }) {
   const note = noteById.get(id);
+
+  // `#/note/<id>/<section>` (from a card's "Full explanation" link) jumps to that heading.
+  useEffect(() => {
+    if (!section) return;
+    const el = document.getElementById(section);
+    if (!el) return;
+    el.scrollIntoView({ block: 'start' });
+    el.classList.add('target');
+    const t = setTimeout(() => el.classList.remove('target'), 2000);
+    return () => clearTimeout(t);
+  }, [section]);
   if (!note) {
     return (
       <div class="page">
@@ -37,7 +50,8 @@ export function NoteView({ id }: { id: string }) {
 
       {list.length > 0 && (
         <a class="button primary block" href={`#/review/${id}`}>
-          Practice this note · {cards.length} card{cards.length === 1 ? '' : 's'}
+          {loadSession(sessionKey(id)) ? 'Resume practice' : 'Practice this note'} · {cards.length} card
+          {cards.length === 1 ? '' : 's'}
           {quizCount > 0 && `, ${quizCount} quiz`}
         </a>
       )}

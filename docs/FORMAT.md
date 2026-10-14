@@ -21,10 +21,15 @@ source: "Why I learned this / where it came up in my research."  # optional, one
 
 Short explanation, 300–800 words. Use ### for subheadings, never ##.
 
+### A subheading
+
+Cards and quiz questions can link here with `See: A subheading`.
+
 ## Cards
 
 Q: Question on one or more lines.
 A: Answer on one or more lines.
+See: A subheading
 
 Q: Next question…
 A: …
@@ -36,6 +41,7 @@ Q: Multiple-choice question?
 - [x] the single correct option
 - [ ] wrong option
 E: Explanation shown after answering (optional, but almost always worth writing).
+See: A subheading
 ```
 
 ## Rules the build checks
@@ -44,6 +50,8 @@ E: Explanation shown after answering (optional, but almost always worth writing)
 - Only three `##` sections are allowed: `Article` (required), `Cards`, `Quiz`.
 - Every card has a `Q:` and an `A:`. Every quiz question has at least two options and **exactly one** `[x]`.
 - Quiz options are single-line Markdown, so use inline math only.
+- `See:` names a `###` or `####` heading of the same note's article (matching ignores case and punctuation).
+  It goes last in its card or quiz question.
 - `id` (the file name) is lowercase letters, digits and hyphens, and is unique across all notes.
 - All LaTeX must compile in KaTeX. A typo fails the build with the file name.
 
@@ -58,7 +66,12 @@ Run `npm run check` to validate without building.
 
 ## Links
 
-Link to another note inside an article with `[text](#/note/<id>)`. Also list it under `related:`;
+After a card is revealed or a quiz question is answered, the app shows a link to the fuller
+explanation: the `See:` section if given, otherwise the top of the article. So give every card and quiz question
+whose answer is worked out in a particular section a `See:` line. That's the point of structuring the article with `###`
+subheadings.
+
+Link to another note inside an article with `[text](#/note/<id>)`, or to a section of it with `[text](#/note/<id>/<heading-slug>)` (the slug is the heading lowercased with runs of other characters replaced by `-`). Also list it under `related:`;
 the note page shows related notes in both directions.
 
 ## Progress is tied to question text

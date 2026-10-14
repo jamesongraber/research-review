@@ -18,6 +18,9 @@ export interface CardItem {
   kind: 'card';
   promptHtml: string;
   answerHtml: string;
+  /** Slug of the article heading that explains this item ('' = the whole note). */
+  see: string;
+  seeTitleHtml: string;
 }
 
 export interface QuizItem {
@@ -27,6 +30,8 @@ export interface QuizItem {
   promptHtml: string;
   options: { html: string; correct: boolean }[];
   explanationHtml: string;
+  see: string;
+  seeTitleHtml: string;
 }
 
 export type Item = CardItem | QuizItem;
