@@ -7,6 +7,7 @@ export default defineConfig({
   // GitHub Pages serves the app from /<repo-name>/; the deploy workflow sets BASE_PATH.
   base: process.env.BASE_PATH ?? '/',
   define: { __BUILD_TIME__: JSON.stringify(new Date().toISOString()) },
+  build: { chunkSizeWarningLimit: 40 * 1024 },
   plugins: [
     preact(),
     content(),
@@ -32,7 +33,8 @@ export default defineConfig({
       workbox: {
         // KaTeX ships woff/ttf fallbacks too; modern browsers only need woff2.
         globPatterns: ['**/*.{js,css,html,svg,png,ico,woff2}'],
-        maximumFileSizeToCacheInBytes: 10 * 1024 * 1024,
+        // All notes ship inside the JS bundle (~80 KB per note before gzip, mostly KaTeX markup).
+        maximumFileSizeToCacheInBytes: 40 * 1024 * 1024,
       },
     }),
   ],

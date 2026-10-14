@@ -10,6 +10,9 @@ rebuilds and redeploys the app, and the installed app updates itself.
 - Cards: recall, tap *Show answer*, then rate honestly (*Again / Hard / Good / Easy*). The small text
   under each button is when you'll see it next.
 - Quiz questions: pick an answer. A wrong answer counts as *Again*. A right answer lets you choose *Hard / Good / Easy*.
+- After each answer, **Full explanation** opens the part of the note that explains it. Your place in the
+  review is saved at every step, so press Back (or the *Resume* bar) to continue exactly where you were.
+  An unfinished review lasts until the end of the day.
 - **Browse** has every note by subject, with search. Each note page has the article, its cards, related
   notes, and *Practice this note*.
 - New items are introduced at most *New items per day* at a time (Settings, default 15).
@@ -21,6 +24,9 @@ rebuilds and redeploys the app, and the installed app updates itself.
   end of a session. It writes the note, validates it and commits.
 - **In claude.ai**: see [docs/claude-ai-project.md](docs/claude-ai-project.md) for a Project setup that
   produces notes in the right format, and how to add them from the phone via github.com.
+- **From a claude.ai data export**: attach the `conversations-000.zip` from Settings → Privacy → Export data
+  and ask Claude Code to mine it for notes. [docs/mined-conversations.md](docs/mined-conversations.md)
+  records which conversations have already been processed, so only new ones are read.
 - **By hand**: follow [docs/FORMAT.md](docs/FORMAT.md), then `npm run check`.
 
 ## Setup
