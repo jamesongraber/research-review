@@ -290,6 +290,11 @@ a.chip.active {
   font-size: 1.1rem;
   margin: 1.4em 0 0.4em;
 }
+.prose h4 {
+  font-size: 1rem;
+  margin: 1.2em 0 0.3em;
+  color: var(--muted);
+}
 .prose code {
   font-size: 0.9em;
   background: var(--accent-soft);
