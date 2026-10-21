@@ -165,7 +165,8 @@ const fetchers = {
     const mailto = config.contact ? `&mailto=${encodeURIComponent(config.contact)}` : '';
     const url = `https://api.openalex.org/works?filter=${encodeURIComponent(filter)}&per-page=${Math.min(maxPerQuery, 200)}&sort=publication_date:desc${mailto}`;
     const data = await get(url);
-    return (data.results ?? []).map((w) => ({
+    const skipTypes = new Set(['dataset', 'software', 'other', 'paratext', 'peer-review', 'erratum']);
+    return (data.results ?? []).filter((w) => !skipTypes.has(w.type)).map((w) => ({
       source: 'openalex',
       title: w.title || w.display_name || '',
       abstract: invertedToText(w.abstract_inverted_index),
@@ -208,8 +209,19 @@ function invertedToText(index) {
   return words.join(' ');
 }
 
-// ---------- scoring ----------
 const lower = (s) => String(s || '').toLowerCase();
+
+/** Code/data deposits and release notes that indexers list as works. */
+function isJunk(p) {
+  const venue = lower(p.venue);
+  const title = lower(p.title);
+  if (/zenodo|github|figshare|dryad|osf\.io/.test(venue)) return true;
+  if (/^(code|data|codes?|software|supplementary (data|material)) (and data )?for\b/.test(title)) return true;
+  if (/\bv\d+(\.\d+)+\b.*(release|version|submission)/.test(title)) return true;
+  return /^[a-z0-9_-]+\/[a-z0-9_-]+: /.test(title); // "owner/repo: ..." GitHub releases
+}
+
+// ---------- scoring ----------
 function score(p) {
   const text = `${lower(p.title)} ${lower(p.abstract)}`;
   const cancerHits = config.required.cancer.filter((t) => text.includes(t));
@@ -259,7 +271,7 @@ for (const source of sources) {
       const papers = await fetcher(query);
       stats[source].raw += papers.length;
       for (const p of papers) {
-        if (!p.title) continue;
+        if (!p.title || isJunk(p)) continue;
         const keys = keysOf(p);
         const dup = keys.find((k) => found.has(k));
         if (dup) {
