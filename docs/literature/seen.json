@@ -1,0 +1,1193 @@
+{
+ "lastRun": "2026-10-21",
+ "papers": {
+  "arxiv:2609.11205": {
+   "firstSeen": "2026-10-21",
+   "title": "Viscosity and variational approaches in free boundary problems: A Volume in Honor of Sandro Salsa"
+  },
+  "title:viscosity and variational approaches in free boundary problems a volume in honor of sandro salsa": {
+   "firstSeen": "2026-10-21",
+   "title": "Viscosity and variational approaches in free boundary problems: A Volume in Honor of Sandro Salsa"
+  },
+  "doi:10.2478/tmmp-2026-0011": {
+   "firstSeen": "2026-10-21",
+   "title": "Mathematical Oncology: Models, Methods, and Clinical Applications"
+  },
+  "title:mathematical oncology models methods and clinical applications": {
+   "firstSeen": "2026-10-21",
+   "title": "Mathematical Oncology: Models, Methods, and Clinical Applications"
+  },
+  "doi:10.1016/j.mbs.2026.109826": {
+   "firstSeen": "2026-10-21",
+   "title": "A degenerate Fokker-Planck stochastic modeling and simulation of the signaling pathways in esophageal cancer."
+  },
+  "title:a degenerate fokker planck stochastic modeling and simulation of the signaling pathways in esophageal cancer": {
+   "firstSeen": "2026-10-21",
+   "title": "A degenerate Fokker-Planck stochastic modeling and simulation of the signaling pathways in esophageal cancer."
+  },
+  "arxiv:2609.37703": {
+   "firstSeen": "2026-10-21",
+   "title": "Stochastic gradient descent on the epigenetic landscape: a unified framework for cellular plasticity, tumor heterogeneit"
+  },
+  "title:stochastic gradient descent on the epigenetic landscape a unified framework for cellular plasticity tumor heterogeneity and the asymptotic irrelevance of fitness": {
+   "firstSeen": "2026-10-21",
+   "title": "Stochastic gradient descent on the epigenetic landscape: a unified framework for cellular plasticity, tumor heterogeneit"
+  },
+  "doi:10.1007/s11538-026-01740-1": {
+   "firstSeen": "2026-10-21",
+   "title": "Eco-Evolutionary Dynamics of Proliferation Heterogeneity: A Phenotype-Structured Model for Tumor Growth and Treatment Re"
+  },
+  "title:eco evolutionary dynamics of proliferation heterogeneity a phenotype structured model for tumor growth and treatment response": {
+   "firstSeen": "2026-10-21",
+   "title": "Eco-Evolutionary Dynamics of Proliferation Heterogeneity: A Phenotype-Structured Model for Tumor Growth and Treatment Re"
+  },
+  "title:mathematical modeling of growth evolution and control in biological populations": {
+   "firstSeen": "2026-10-21",
+   "title": "Mathematical Modeling of Growth, Evolution, and Control in Biological Populations"
+  },
+  "arxiv:2609.12264": {
+   "firstSeen": "2026-10-21",
+   "title": "Adaptive Chemotherapy Control under Tumor Heterogeneity via Reinforcement Learning"
+  },
+  "title:adaptive chemotherapy control under tumor heterogeneity via reinforcement learning": {
+   "firstSeen": "2026-10-21",
+   "title": "Adaptive Chemotherapy Control under Tumor Heterogeneity via Reinforcement Learning"
+  },
+  "doi:10.36922/ijocta026060023": {
+   "firstSeen": "2026-10-21",
+   "title": "Control of tumor cell populations using hyperbolic functions: Stabilization and optimal therapy design"
+  },
+  "title:control of tumor cell populations using hyperbolic functions stabilization and optimal therapy design": {
+   "firstSeen": "2026-10-21",
+   "title": "Control of tumor cell populations using hyperbolic functions: Stabilization and optimal therapy design"
+  },
+  "doi:10.1016/j.mbs.2026.109764": {
+   "firstSeen": "2026-10-21",
+   "title": "Optimal melanoma treatment protocols: A bilinear control model."
+  },
+  "title:optimal melanoma treatment protocols a bilinear control model": {
+   "firstSeen": "2026-10-21",
+   "title": "Optimal melanoma treatment protocols: A bilinear control model."
+  },
+  "doi:10.3390/cmsf2026015011": {
+   "firstSeen": "2026-10-21",
+   "title": "Optimal Control of Combined Chemotherapy and Immunotherapy in a Tumor–Immune Model with Sensitivity Analysis"
+  },
+  "title:optimal control of combined chemotherapy and immunotherapy in a tumor immune model with sensitivity analysis": {
+   "firstSeen": "2026-10-21",
+   "title": "Optimal Control of Combined Chemotherapy and Immunotherapy in a Tumor–Immune Model with Sensitivity Analysis"
+  },
+  "doi:10.1016/j.meegid.2026.106019": {
+   "firstSeen": "2026-10-21",
+   "title": "Evolutionary genomics, tumor dynamics, and mathematical modeling of cancer progression: Implications for precision oncol"
+  },
+  "title:evolutionary genomics tumor dynamics and mathematical modeling of cancer progression implications for precision oncology": {
+   "firstSeen": "2026-10-21",
+   "title": "Evolutionary genomics, tumor dynamics, and mathematical modeling of cancer progression: Implications for precision oncol"
+  },
+  "doi:10.1109/cdc57313.2025.11312610": {
+   "firstSeen": "2026-10-21",
+   "title": "Optimal Control for Cancer Chemotherapy Using Hybrid Quantum Particle Swarm Optimization"
+  },
+  "arxiv:2609.11197": {
+   "firstSeen": "2026-10-21",
+   "title": "Optimal Control for Cancer Chemotherapy Using Hybrid Quantum Particle Swarm Optimization"
+  },
+  "title:optimal control for cancer chemotherapy using hybrid quantum particle swarm optimization": {
+   "firstSeen": "2026-10-21",
+   "title": "Optimal Control for Cancer Chemotherapy Using Hybrid Quantum Particle Swarm Optimization"
+  },
+  "arxiv:2608.18974": {
+   "firstSeen": "2026-10-21",
+   "title": "Modeling of an ODE-constrained optimization problem describing tumor dynamics, and numerical approximation via sequentia"
+  },
+  "title:modeling of an ode constrained optimization problem describing tumor dynamics and numerical approximation via sequential physics informed neural networks": {
+   "firstSeen": "2026-10-21",
+   "title": "Modeling of an ODE-constrained optimization problem describing tumor dynamics, and numerical approximation via sequentia"
+  },
+  "doi:10.3390/e28080921": {
+   "firstSeen": "2026-10-21",
+   "title": "Optimal Chemotherapy Scheduling for Chronic Lymphocytic Leukemia Under Immune and Allergy Constraints."
+  },
+  "title:optimal chemotherapy scheduling for chronic lymphocytic leukemia under immune and allergy constraints": {
+   "firstSeen": "2026-10-21",
+   "title": "Optimal Chemotherapy Scheduling for Chronic Lymphocytic Leukemia Under Immune and Allergy Constraints."
+  },
+  "arxiv:2607.03252": {
+   "firstSeen": "2026-10-21",
+   "title": "An Onsager Variational Scheme for Pressure-Driven Tumor Growth and Hele-Shaw Limits"
+  },
+  "title:an onsager variational scheme for pressure driven tumor growth and hele shaw limits": {
+   "firstSeen": "2026-10-21",
+   "title": "An Onsager Variational Scheme for Pressure-Driven Tumor Growth and Hele-Shaw Limits"
+  },
+  "doi:10.64898/2026.09.19.752909": {
+   "firstSeen": "2026-10-21",
+   "title": "Noninvasive tomography of tumor progression via dynamical changes of T-cells in surrounding microenvironment"
+  },
+  "title:noninvasive tomography of tumor progression via dynamical changes of t cells in surrounding microenvironment": {
+   "firstSeen": "2026-10-21",
+   "title": "Noninvasive tomography of tumor progression via dynamical changes of T-cells in surrounding microenvironment"
+  },
+  "doi:10.3390/cancers18182979": {
+   "firstSeen": "2026-10-21",
+   "title": "Eco-Evolutionary Thinking in Metastatic Breast Cancer: A Clinician’s Primer on Why Tumors Outsmart Us and How to Fight B"
+  },
+  "title:eco evolutionary thinking in metastatic breast cancer a clinician s primer on why tumors outsmart us and how to fight back smarter": {
+   "firstSeen": "2026-10-21",
+   "title": "Eco-Evolutionary Thinking in Metastatic Breast Cancer: A Clinician’s Primer on Why Tumors Outsmart Us and How to Fight B"
+  },
+  "arxiv:2608.16509": {
+   "firstSeen": "2026-10-21",
+   "title": "Space-time geometry of Hele-Shaw flow"
+  },
+  "title:space time geometry of hele shaw flow": {
+   "firstSeen": "2026-10-21",
+   "title": "Space-time geometry of Hele-Shaw flow"
+  },
+  "arxiv:2607.02880": {
+   "firstSeen": "2026-10-21",
+   "title": "A Geometric Local Parameterization Method for Generalized Hele-Shaw Free Boundary Problems with Source Terms"
+  },
+  "title:a geometric local parameterization method for generalized hele shaw free boundary problems with source terms": {
+   "firstSeen": "2026-10-21",
+   "title": "A Geometric Local Parameterization Method for Generalized Hele-Shaw Free Boundary Problems with Source Terms"
+  },
+  "doi:10.1016/j.rico.2026.100777": {
+   "firstSeen": "2026-10-21",
+   "title": "Optimal control and cost-effectiveness analysis of HPV vaccination, screening, and treatment for cervical cancer reducti"
+  },
+  "title:optimal control and cost effectiveness analysis of hpv vaccination screening and treatment for cervical cancer reduction in tanzania": {
+   "firstSeen": "2026-10-21",
+   "title": "Optimal control and cost-effectiveness analysis of HPV vaccination, screening, and treatment for cervical cancer reducti"
+  },
+  "doi:10.64898/2026.10.15.759390": {
+   "firstSeen": "2026-10-21",
+   "title": "Persister cells and their effects on cancer stabilization therapy"
+  },
+  "title:persister cells and their effects on cancer stabilization therapy": {
+   "firstSeen": "2026-10-21",
+   "title": "Persister cells and their effects on cancer stabilization therapy"
+  },
+  "doi:10.1016/j.cmpb.2026.109681": {
+   "firstSeen": "2026-10-21",
+   "title": "Weighted scenario-based model predictive control for cancer treatment using a spatial evolutionary game framework"
+  },
+  "title:weighted scenario based model predictive control for cancer treatment using a spatial evolutionary game framework": {
+   "firstSeen": "2026-10-21",
+   "title": "Weighted scenario-based model predictive control for cancer treatment using a spatial evolutionary game framework"
+  },
+  "doi:10.1016/j.cnsns.2026.110884": {
+   "firstSeen": "2026-10-21",
+   "title": "Mathematical modeling and optimal control of spatio-temporal low-grade glioma dynamics via reaction-diffusion equations"
+  },
+  "title:mathematical modeling and optimal control of spatio temporal low grade glioma dynamics via reaction diffusion equations": {
+   "firstSeen": "2026-10-21",
+   "title": "Mathematical modeling and optimal control of spatio-temporal low-grade glioma dynamics via reaction-diffusion equations"
+  },
+  "doi:10.48676/unibo/amsdottorato/13136": {
+   "firstSeen": "2026-10-21",
+   "title": "Modeling, prediction and control methods for tumor dynamics"
+  },
+  "title:modeling prediction and control methods for tumor dynamics": {
+   "firstSeen": "2026-10-21",
+   "title": "Modeling, prediction and control methods for tumor dynamics"
+  },
+  "doi:10.3390/math14173169": {
+   "firstSeen": "2026-10-21",
+   "title": "Optimal Chemotherapy Control and Dynamics of Tumor–Immune Interactions"
+  },
+  "title:optimal chemotherapy control and dynamics of tumor immune interactions": {
+   "firstSeen": "2026-10-21",
+   "title": "Optimal Chemotherapy Control and Dynamics of Tumor–Immune Interactions"
+  },
+  "doi:10.1016/j.biosystems.2026.105929": {
+   "firstSeen": "2026-10-21",
+   "title": "Stress-driven strategic games in cancer."
+  },
+  "title:stress driven strategic games in cancer": {
+   "firstSeen": "2026-10-21",
+   "title": "Stress-driven strategic games in cancer."
+  },
+  "doi:10.1038/s41598-026-68384-y": {
+   "firstSeen": "2026-10-21",
+   "title": "Caputo fractional-order modelling of HPV-induced cervical cancer progression under vaccination, screening and treatment "
+  },
+  "title:caputo fractional order modelling of hpv induced cervical cancer progression under vaccination screening and treatment controls": {
+   "firstSeen": "2026-10-21",
+   "title": "Caputo fractional-order modelling of HPV-induced cervical cancer progression under vaccination, screening and treatment "
+  },
+  "doi:10.51867/scimundi.6.2.18": {
+   "firstSeen": "2026-10-21",
+   "title": "Fractional-order optimal control for personalized chemotherapy scheduling in hematological malignancies"
+  },
+  "title:fractional order optimal control for personalized chemotherapy scheduling in hematological malignancies": {
+   "firstSeen": "2026-10-21",
+   "title": "Fractional-order optimal control for personalized chemotherapy scheduling in hematological malignancies"
+  },
+  "arxiv:2608.18387": {
+   "firstSeen": "2026-10-21",
+   "title": "Adaptive therapy under parametric, structural, and measurement uncertainty"
+  },
+  "title:adaptive therapy under parametric structural and measurement uncertainty": {
+   "firstSeen": "2026-10-21",
+   "title": "Adaptive therapy under parametric, structural, and measurement uncertainty"
+  },
+  "doi:10.1142/s1793524526500762": {
+   "firstSeen": "2026-10-21",
+   "title": "Analysis of a free-boundary vascularized tumor growth model with time delays and inhibitor action"
+  },
+  "title:analysis of a free boundary vascularized tumor growth model with time delays and inhibitor action": {
+   "firstSeen": "2026-10-21",
+   "title": "Analysis of a free-boundary vascularized tumor growth model with time delays and inhibitor action"
+  },
+  "doi:10.1109/codit70676.2026.11630740": {
+   "firstSeen": "2026-10-21",
+   "title": "An Optimal Control Framework for Personalized Chemotherapy: EKF State Estimation and DDPG Optimization"
+  },
+  "title:an optimal control framework for personalized chemotherapy ekf state estimation and ddpg optimization": {
+   "firstSeen": "2026-10-21",
+   "title": "An Optimal Control Framework for Personalized Chemotherapy: EKF State Estimation and DDPG Optimization"
+  },
+  "arxiv:2610.22336": {
+   "firstSeen": "2026-10-21",
+   "title": "Robust Reinforcement Learning for Dynamic Treatment Regimes under Model and Measurement Uncertainty"
+  },
+  "title:robust reinforcement learning for dynamic treatment regimes under model and measurement uncertainty": {
+   "firstSeen": "2026-10-21",
+   "title": "Robust Reinforcement Learning for Dynamic Treatment Regimes under Model and Measurement Uncertainty"
+  },
+  "doi:10.69829/apna-027-0401-ta01": {
+   "firstSeen": "2026-10-21",
+   "title": "A REFINED FORMULATION AND RIGOROUS ANALYSIS OF AN INVERSE FREE BOUNDARY PROBLEM IN MODELING DUCTAL CARCINOMA IN SITU"
+  },
+  "title:a refined formulation and rigorous analysis of an inverse free boundary problem in modeling ductal carcinoma in situ": {
+   "firstSeen": "2026-10-21",
+   "title": "A REFINED FORMULATION AND RIGOROUS ANALYSIS OF AN INVERSE FREE BOUNDARY PROBLEM IN MODELING DUCTAL CARCINOMA IN SITU"
+  },
+  "doi:10.1038/s41540-026-00827-8": {
+   "firstSeen": "2026-10-21",
+   "title": "Dynamic cancer dormancy and awakening emerge from tumor microenvironment feedback in a minimal theoretical model"
+  },
+  "title:dynamic cancer dormancy and awakening emerge from tumor microenvironment feedback in a minimal theoretical model": {
+   "firstSeen": "2026-10-21",
+   "title": "Dynamic cancer dormancy and awakening emerge from tumor microenvironment feedback in a minimal theoretical model"
+  },
+  "doi:10.64898/2026.10.06.757145": {
+   "firstSeen": "2026-10-21",
+   "title": "Crowding governs resistance confinement and guides the improvement of adaptive therapy in a 2D melanoma model system"
+  },
+  "title:crowding governs resistance confinement and guides the improvement of adaptive therapy in a 2d melanoma model system": {
+   "firstSeen": "2026-10-21",
+   "title": "Crowding governs resistance confinement and guides the improvement of adaptive therapy in a 2D melanoma model system"
+  },
+  "doi:10.1038/s44387-026-00157-4": {
+   "firstSeen": "2026-10-21",
+   "title": "Reinforcement Failing guides the discovery of emergent physical dynamics in adaptive tumor therapy"
+  },
+  "title:reinforcement failing guides the discovery of emergent physical dynamics in adaptive tumor therapy": {
+   "firstSeen": "2026-10-21",
+   "title": "Reinforcement Failing guides the discovery of emergent physical dynamics in adaptive tumor therapy"
+  },
+  "doi:10.1016/j.jde.2026.114815": {
+   "firstSeen": "2026-10-21",
+   "title": "Global and stationary solutions for a free boundary problem modeling a triple-layered tumor growth"
+  },
+  "title:global and stationary solutions for a free boundary problem modeling a triple layered tumor growth": {
+   "firstSeen": "2026-10-21",
+   "title": "Global and stationary solutions for a free boundary problem modeling a triple-layered tumor growth"
+  },
+  "doi:10.1038/s41598-026-73996-5": {
+   "firstSeen": "2026-10-21",
+   "title": "Spectral Chebyshev wavelet method for state-dependent fractional integro-differential equations in adaptive tumor growth"
+  },
+  "title:spectral chebyshev wavelet method for state dependent fractional integro differential equations in adaptive tumor growth modeling": {
+   "firstSeen": "2026-10-21",
+   "title": "Spectral Chebyshev wavelet method for state-dependent fractional integro-differential equations in adaptive tumor growth"
+  },
+  "doi:10.1001/jamaoncol.2026.2781": {
+   "firstSeen": "2026-10-21",
+   "title": "Mathematical Biomarkers of Adaptive Therapy Outcomes in Prostate Cancer."
+  },
+  "title:mathematical biomarkers of adaptive therapy outcomes in prostate cancer": {
+   "firstSeen": "2026-10-21",
+   "title": "Mathematical Biomarkers of Adaptive Therapy Outcomes in Prostate Cancer."
+  },
+  "doi:10.1080/00036811.2026.2736067": {
+   "firstSeen": "2026-10-21",
+   "title": "Mathematical analysis and numerical simulation of free boundary problem modeling tumor evolution"
+  },
+  "title:mathematical analysis and numerical simulation of free boundary problem modeling tumor evolution": {
+   "firstSeen": "2026-10-21",
+   "title": "Mathematical analysis and numerical simulation of free boundary problem modeling tumor evolution"
+  },
+  "doi:10.1371/journal.pone.0342672": {
+   "firstSeen": "2026-10-21",
+   "title": "A quantitative treatment assessment for optimizing combined virotherapy-chemotherapy regimens against HPV-induced cervic"
+  },
+  "title:a quantitative treatment assessment for optimizing combined virotherapy chemotherapy regimens against hpv induced cervical cancer": {
+   "firstSeen": "2026-10-21",
+   "title": "A quantitative treatment assessment for optimizing combined virotherapy-chemotherapy regimens against HPV-induced cervic"
+  },
+  "doi:10.64898/2026.09.17.751892": {
+   "firstSeen": "2026-10-21",
+   "title": "How optimal control of cellular cost shapes population-level tumor growth dynamics"
+  },
+  "title:how optimal control of cellular cost shapes population level tumor growth dynamics": {
+   "firstSeen": "2026-10-21",
+   "title": "How optimal control of cellular cost shapes population-level tumor growth dynamics"
+  },
+  "doi:10.23900/artefactum.v25i9.4193": {
+   "firstSeen": "2026-10-21",
+   "title": "PHYSICS-INFORMED NEURAL NETWORKS FOR SPATIOTEMPORAL TUMOR GROWTH MODELING: A COMPREHENSIVE SIMULATION STUDY"
+  },
+  "title:physics informed neural networks for spatiotemporal tumor growth modeling a comprehensive simulation study": {
+   "firstSeen": "2026-10-21",
+   "title": "PHYSICS-INFORMED NEURAL NETWORKS FOR SPATIOTEMPORAL TUMOR GROWTH MODELING: A COMPREHENSIVE SIMULATION STUDY"
+  },
+  "doi:10.63680/ijsate092617.17": {
+   "firstSeen": "2026-10-21",
+   "title": "Optimal Control of a Reaction–Diffusion Tumor Growth Model"
+  },
+  "title:optimal control of a reaction diffusion tumor growth model": {
+   "firstSeen": "2026-10-21",
+   "title": "Optimal Control of a Reaction–Diffusion Tumor Growth Model"
+  },
+  "doi:10.1101/2025.07.27.666994": {
+   "firstSeen": "2026-10-21",
+   "title": "Quantum Sensing Reveals Chemotherapy Induced Persistent Oxidative Footprints in Fixed Brain Cancer Cells"
+  },
+  "title:quantum sensing reveals chemotherapy induced persistent oxidative footprints in fixed brain cancer cells": {
+   "firstSeen": "2026-10-21",
+   "title": "Quantum Sensing Reveals Chemotherapy Induced Persistent Oxidative Footprints in Fixed Brain Cancer Cells"
+  },
+  "title:optimal control of vaccine therapy in a tumor immune vaccine model for pituitaryneuroendocrine tumors": {
+   "firstSeen": "2026-10-21",
+   "title": "Optimal Control of Vaccine Therapy in a Tumor-Immune-Vaccine Model for PituitaryNeuroendocrine Tumors"
+  },
+  "doi:10.64898/2026.09.01.748242": {
+   "firstSeen": "2026-10-21",
+   "title": "Robust and Quality-of-Life-Aware Treatment Protocols in NSCLC using Deep Reinforcement Learning"
+  },
+  "title:robust and quality of life aware treatment protocols in nsclc using deep reinforcement learning": {
+   "firstSeen": "2026-10-21",
+   "title": "Robust and Quality-of-Life-Aware Treatment Protocols in NSCLC using Deep Reinforcement Learning"
+  },
+  "doi:10.1002/ijc.70731": {
+   "firstSeen": "2026-10-21",
+   "title": "Developing Personalized Postoperative Follow-Up Strategies for Patients With Locally Advanced Gastric Cancer Receiving N"
+  },
+  "title:developing personalized postoperative follow up strategies for patients with locally advanced gastric cancer receiving neoadjuvant therapy based on dynamic programming a multicenter retrospective cohort study in china": {
+   "firstSeen": "2026-10-21",
+   "title": "Developing Personalized Postoperative Follow-Up Strategies for Patients With Locally Advanced Gastric Cancer Receiving N"
+  },
+  "doi:10.1002/mp.70639": {
+   "firstSeen": "2026-10-21",
+   "title": "Develop a novel non-coplanar trajectory optimization algorithm for an efficient 4pi spot-scanning proton Arc (SPArc&lt;s"
+  },
+  "title:develop a novel non coplanar trajectory optimization algorithm for an efficient 4pi spot scanning proton arc sparc lt sub gt 4pi lt sub gt treatment delivery": {
+   "firstSeen": "2026-10-21",
+   "title": "Develop a novel non-coplanar trajectory optimization algorithm for an efficient 4pi spot-scanning proton Arc (SPArc&lt;s"
+  },
+  "title:optimal control of vaccine administration in a patient specific tumor immune vaccine model for a pituitary neuroendocrine tumor": {
+   "firstSeen": "2026-10-21",
+   "title": "Optimal Control of Vaccine Administration in a Patient-Specific Tumor-Immune-Vaccine Model for a Pituitary Neuroendocrin"
+  },
+  "doi:10.3934/mbe.2026091": {
+   "firstSeen": "2026-10-21",
+   "title": "A reaction-diffusion delay model for spatial tumor virotherapy with optimal control."
+  },
+  "title:a reaction diffusion delay model for spatial tumor virotherapy with optimal control": {
+   "firstSeen": "2026-10-21",
+   "title": "A reaction-diffusion delay model for spatial tumor virotherapy with optimal control."
+  },
+  "doi:10.1016/j.intonc.2026.100084": {
+   "firstSeen": "2026-10-21",
+   "title": "Is it time for generative artificial intelligence in oncology? The case of treatment response predictions in metastatic "
+  },
+  "title:is it time for generative artificial intelligence in oncology the case of treatment response predictions in metastatic prostate cancer": {
+   "firstSeen": "2026-10-21",
+   "title": "Is it time for generative artificial intelligence in oncology? The case of treatment response predictions in metastatic "
+  },
+  "doi:10.1007/s40435-026-02269-w": {
+   "firstSeen": "2026-10-21",
+   "title": "Optimal Control of Brain Tumor Dynamics in a Vascular-Immune Microenvironment with Drug Resistance and Pharmacokinetics"
+  },
+  "title:optimal control of brain tumor dynamics in a vascular immune microenvironment with drug resistance and pharmacokinetics": {
+   "firstSeen": "2026-10-21",
+   "title": "Optimal Control of Brain Tumor Dynamics in a Vascular-Immune Microenvironment with Drug Resistance and Pharmacokinetics"
+  },
+  "doi:10.1038/s41598-026-63987-x": {
+   "firstSeen": "2026-10-21",
+   "title": "Density dependence and evolvability limit adaptive therapy in non-small cell lung cancer mouse model"
+  },
+  "title:density dependence and evolvability limit adaptive therapy in non small cell lung cancer mouse model": {
+   "firstSeen": "2026-10-21",
+   "title": "Density dependence and evolvability limit adaptive therapy in non-small cell lung cancer mouse model"
+  },
+  "doi:10.1109/assic70037.2026.11717066": {
+   "firstSeen": "2026-10-21",
+   "title": "AI-Driven Digital Twin Architectures with Multimodal Foundation Models and Reinforcement Learning for Adaptive Cancer Th"
+  },
+  "title:ai driven digital twin architectures with multimodal foundation models and reinforcement learning for adaptive cancer therapy optimization": {
+   "firstSeen": "2026-10-21",
+   "title": "AI-Driven Digital Twin Architectures with Multimodal Foundation Models and Reinforcement Learning for Adaptive Cancer Th"
+  },
+  "arxiv:2607.11820": {
+   "firstSeen": "2026-10-21",
+   "title": "A quantitative model for the emergent population dynamics of the melanoma MITF rheostat"
+  },
+  "title:a quantitative model for the emergent population dynamics of the melanoma mitf rheostat": {
+   "firstSeen": "2026-10-21",
+   "title": "A quantitative model for the emergent population dynamics of the melanoma MITF rheostat"
+  },
+  "doi:10.64898/2026.07.06.736651": {
+   "firstSeen": "2026-10-21",
+   "title": "LeafRank: A phylodynamic framework for inferring relative fitness from single-cell phylogenies in chromosomally unstable"
+  },
+  "title:leafrank a phylodynamic framework for inferring relative fitness from single cell phylogenies in chromosomally unstable tumors": {
+   "firstSeen": "2026-10-21",
+   "title": "LeafRank: A phylodynamic framework for inferring relative fitness from single-cell phylogenies in chromosomally unstable"
+  },
+  "doi:10.1007/s42452-026-08998-z": {
+   "firstSeen": "2026-10-21",
+   "title": "Optimal control analysis of HPV infections transmission dynamics in an ABC fractional-order framework"
+  },
+  "title:optimal control analysis of hpv infections transmission dynamics in an abc fractional order framework": {
+   "firstSeen": "2026-10-21",
+   "title": "Optimal control analysis of HPV infections transmission dynamics in an ABC fractional-order framework"
+  },
+  "doi:10.3390/math14132352": {
+   "firstSeen": "2026-10-21",
+   "title": "Stochastic Invasion and Immune Feedback in a Tumor–Immune–IL-4 Model"
+  },
+  "title:stochastic invasion and immune feedback in a tumor immune il 4 model": {
+   "firstSeen": "2026-10-21",
+   "title": "Stochastic Invasion and Immune Feedback in a Tumor–Immune–IL-4 Model"
+  },
+  "doi:10.1016/j.jde.2026.114851": {
+   "firstSeen": "2026-10-21",
+   "title": "The traveling wave to a reaction-diffusion system modeling cancer invasion"
+  },
+  "title:the traveling wave to a reaction diffusion system modeling cancer invasion": {
+   "firstSeen": "2026-10-21",
+   "title": "The traveling wave to a reaction-diffusion system modeling cancer invasion"
+  },
+  "doi:10.1142/s1793524526501214": {
+   "firstSeen": "2026-10-21",
+   "title": "Tumor growth simulation using the multigrid method"
+  },
+  "title:tumor growth simulation using the multigrid method": {
+   "firstSeen": "2026-10-21",
+   "title": "Tumor growth simulation using the multigrid method"
+  },
+  "arxiv:2610.04380": {
+   "firstSeen": "2026-10-21",
+   "title": "Asymptotic analysis of an optimal control problem for a phase field tumor growth model with hyperbolic relaxation of the"
+  },
+  "title:asymptotic analysis of an optimal control problem for a phase field tumor growth model with hyperbolic relaxation of the chemical potential": {
+   "firstSeen": "2026-10-21",
+   "title": "Asymptotic analysis of an optimal control problem for a phase field tumor growth model with hyperbolic relaxation of the"
+  },
+  "doi:10.1137/25m1805102": {
+   "firstSeen": "2026-10-21",
+   "title": "Quasi-Monte Carlo Methods for Uncertainty Quantification of Tumor Growth Modeled by a Parametric Semilinear Parabolic Re"
+  },
+  "arxiv:2509.25753": {
+   "firstSeen": "2026-10-21",
+   "title": "Quasi-Monte Carlo Methods for Uncertainty Quantification of Tumor Growth Modeled by a Parametric Semilinear Parabolic Re"
+  },
+  "title:quasi monte carlo methods for uncertainty quantification of tumor growth modeled by a parametric semilinear parabolic reaction diffusion equation": {
+   "firstSeen": "2026-10-21",
+   "title": "Quasi-Monte Carlo Methods for Uncertainty Quantification of Tumor Growth Modeled by a Parametric Semilinear Parabolic Re"
+  },
+  "doi:10.7936/k01p-7686": {
+   "firstSeen": "2026-10-21",
+   "title": "Hematopoietic Stem and Progenitor Cell Reprogramming During Breast Cancer Progression Promotes Myeloid-Biased Hematopoie"
+  },
+  "title:hematopoietic stem and progenitor cell reprogramming during breast cancer progression promotes myeloid biased hematopoiesis": {
+   "firstSeen": "2026-10-21",
+   "title": "Hematopoietic Stem and Progenitor Cell Reprogramming During Breast Cancer Progression Promotes Myeloid-Biased Hematopoie"
+  },
+  "doi:10.1002/oca.70142": {
+   "firstSeen": "2026-10-21",
+   "title": "A New Accurate Horadam Wavelet Method for Solving Fractional Optimal Control Problems"
+  },
+  "title:a new accurate horadam wavelet method for solving fractional optimal control problems": {
+   "firstSeen": "2026-10-21",
+   "title": "A New Accurate Horadam Wavelet Method for Solving Fractional Optimal Control Problems"
+  },
+  "doi:10.1016/j.matcom.2026.09.010": {
+   "firstSeen": "2026-10-21",
+   "title": "Bifurcation analysis of a melanoma–immune model with two time delays and optimal control for dendritic cell vaccination"
+  },
+  "title:bifurcation analysis of a melanoma immune model with two time delays and optimal control for dendritic cell vaccination": {
+   "firstSeen": "2026-10-21",
+   "title": "Bifurcation analysis of a melanoma–immune model with two time delays and optimal control for dendritic cell vaccination"
+  },
+  "doi:10.4208/csiam-ls.so-2026-0426": {
+   "firstSeen": "2026-10-21",
+   "title": "Towards a Quantitative Understanding of Cellular Dynamics via Lineage Tracing Inference"
+  },
+  "title:towards a quantitative understanding of cellular dynamics via lineage tracing inference": {
+   "firstSeen": "2026-10-21",
+   "title": "Towards a Quantitative Understanding of Cellular Dynamics via Lineage Tracing Inference"
+  },
+  "arxiv:2609.06667": {
+   "firstSeen": "2026-10-21",
+   "title": "Behavioral Cloning Outperforms Entropy-Regularized RL: Critic-Driven Failure of Actor-Critic Methods on Adaptive Tumor T"
+  },
+  "title:behavioral cloning outperforms entropy regularized rl critic driven failure of actor critic methods on adaptive tumor treatment": {
+   "firstSeen": "2026-10-21",
+   "title": "Behavioral Cloning Outperforms Entropy-Regularized RL: Critic-Driven Failure of Actor-Critic Methods on Adaptive Tumor T"
+  },
+  "doi:10.1007/s10439-026-04348-7": {
+   "firstSeen": "2026-10-21",
+   "title": "Characterizing Tumor Cell Movement in Partial Differential Equation Models of Triple-Negative Breast Cancer Receiving Ne"
+  },
+  "title:characterizing tumor cell movement in partial differential equation models of triple negative breast cancer receiving neoadjuvant therapy": {
+   "firstSeen": "2026-10-21",
+   "title": "Characterizing Tumor Cell Movement in Partial Differential Equation Models of Triple-Negative Breast Cancer Receiving Ne"
+  },
+  "doi:10.1007/s11538-026-01743-y": {
+   "firstSeen": "2026-10-21",
+   "title": "Delay Differential Equation Approach to Oligomerization Reveals the Delay Dynamics Underlying Oscillations in Mitochondr"
+  },
+  "title:delay differential equation approach to oligomerization reveals the delay dynamics underlying oscillations in mitochondrial fission": {
+   "firstSeen": "2026-10-21",
+   "title": "Delay Differential Equation Approach to Oligomerization Reveals the Delay Dynamics Underlying Oscillations in Mitochondr"
+  },
+  "doi:10.3390/math14162962": {
+   "firstSeen": "2026-10-21",
+   "title": "Regularized Parameter Identification in the Tumor Growth Model"
+  },
+  "title:regularized parameter identification in the tumor growth model": {
+   "firstSeen": "2026-10-21",
+   "title": "Regularized Parameter Identification in the Tumor Growth Model"
+  },
+  "arxiv:2608.15300": {
+   "firstSeen": "2026-10-21",
+   "title": "Ghost Dynamics in Receptor Signalling Networks: A Fast--Slow Adaptive Extension of Competitive Cancer Inhibition Models"
+  },
+  "title:ghost dynamics in receptor signalling networks a fast slow adaptive extension of competitive cancer inhibition models": {
+   "firstSeen": "2026-10-21",
+   "title": "Ghost Dynamics in Receptor Signalling Networks: A Fast--Slow Adaptive Extension of Competitive Cancer Inhibition Models"
+  },
+  "doi:10.1016/j.mbs.2026.109782": {
+   "firstSeen": "2026-10-21",
+   "title": "Modeling melanoma-immune interactions with a physiological delay incorporating dendritic cell vaccines and anti-PD-1 the"
+  },
+  "title:modeling melanoma immune interactions with a physiological delay incorporating dendritic cell vaccines and anti pd 1 therapy": {
+   "firstSeen": "2026-10-21",
+   "title": "Modeling melanoma-immune interactions with a physiological delay incorporating dendritic cell vaccines and anti-PD-1 the"
+  },
+  "arxiv:2607.24468": {
+   "firstSeen": "2026-10-21",
+   "title": "Optimization of the total tumor population under Gompertz growth"
+  },
+  "title:optimization of the total tumor population under gompertz growth": {
+   "firstSeen": "2026-10-21",
+   "title": "Optimization of the total tumor population under Gompertz growth"
+  },
+  "doi:10.64898/2026.07.20.739667": {
+   "firstSeen": "2026-10-21",
+   "title": "CNVeil resolves haplotype-specific copy number and uncovers subclonal architecture hidden from total copy number profili"
+  },
+  "title:cnveil resolves haplotype specific copy number and uncovers subclonal architecture hidden from total copy number profiling in single cell cancer genomes": {
+   "firstSeen": "2026-10-21",
+   "title": "CNVeil resolves haplotype-specific copy number and uncovers subclonal architecture hidden from total copy number profili"
+  },
+  "arxiv:2607.16916": {
+   "firstSeen": "2026-10-21",
+   "title": "Enhancing Personalized Bladder Cancer Treatment Through Reinforcement Learning: A Recurrent Patient State Transition Dec"
+  },
+  "title:enhancing personalized bladder cancer treatment through reinforcement learning a recurrent patient state transition decision support framework": {
+   "firstSeen": "2026-10-21",
+   "title": "Enhancing Personalized Bladder Cancer Treatment Through Reinforcement Learning: A Recurrent Patient State Transition Dec"
+  },
+  "arxiv:2607.07261": {
+   "firstSeen": "2026-10-21",
+   "title": "Mathematical models for CAR T immunotherapy and CD19 dynamics in leukemia: a comparative analysis"
+  },
+  "title:mathematical models for car t immunotherapy and cd19 dynamics in leukemia a comparative analysis": {
+   "firstSeen": "2026-10-21",
+   "title": "Mathematical models for CAR T immunotherapy and CD19 dynamics in leukemia: a comparative analysis"
+  },
+  "arxiv:2607.05610": {
+   "firstSeen": "2026-10-21",
+   "title": "A free boundary analysis of tumor invasion driven by angiogenesis"
+  },
+  "title:a free boundary analysis of tumor invasion driven by angiogenesis": {
+   "firstSeen": "2026-10-21",
+   "title": "A free boundary analysis of tumor invasion driven by angiogenesis"
+  },
+  "title:multiscale mathematical models of drug and immune cell trafficking to support innovative cancer treatments": {
+   "firstSeen": "2026-10-21",
+   "title": "Multiscale mathematical models of drug and immune cell trafficking to support innovative cancer treatments"
+  },
+  "doi:10.1007/s40314-026-03937-5": {
+   "firstSeen": "2026-10-21",
+   "title": "A comparative optimal control strategy for melanoma treatment via radiotherapy, TAMs-targeted therapy, and CAR T-cell ad"
+  },
+  "title:a comparative optimal control strategy for melanoma treatment via radiotherapy tams targeted therapy and car t cell administration": {
+   "firstSeen": "2026-10-21",
+   "title": "A comparative optimal control strategy for melanoma treatment via radiotherapy, TAMs-targeted therapy, and CAR T-cell ad"
+  },
+  "doi:10.1371/journal.pcbi.1014858": {
+   "firstSeen": "2026-10-21",
+   "title": "Hyper-mutational processes provide a head-start for weak cancer drivers: Explaining atypical KRAS variants."
+  },
+  "title:hyper mutational processes provide a head start for weak cancer drivers explaining atypical kras variants": {
+   "firstSeen": "2026-10-21",
+   "title": "Hyper-mutational processes provide a head-start for weak cancer drivers: Explaining atypical KRAS variants."
+  },
+  "doi:10.5258/soton/pg/t323": {
+   "firstSeen": "2026-10-21",
+   "title": "An investigation into asymmetric cell division"
+  },
+  "title:an investigation into asymmetric cell division": {
+   "firstSeen": "2026-10-21",
+   "title": "An investigation into asymmetric cell division"
+  },
+  "doi:10.1016/j.biosystems.2026.105969": {
+   "firstSeen": "2026-10-21",
+   "title": "Mathematical modeling and intelligent methods in systems biology and medicine applied to complex diseases: An overview."
+  },
+  "title:mathematical modeling and intelligent methods in systems biology and medicine applied to complex diseases an overview": {
+   "firstSeen": "2026-10-21",
+   "title": "Mathematical modeling and intelligent methods in systems biology and medicine applied to complex diseases: An overview."
+  },
+  "doi:10.62527/joiv.10.5.4499": {
+   "firstSeen": "2026-10-21",
+   "title": "Optimizing the Needleman–Wunsch Algorithm Using Dual-GPU Tiling for Enhanced Computational Performance"
+  },
+  "title:optimizing the needleman wunsch algorithm using dual gpu tiling for enhanced computational performance": {
+   "firstSeen": "2026-10-21",
+   "title": "Optimizing the Needleman–Wunsch Algorithm Using Dual-GPU Tiling for Enhanced Computational Performance"
+  },
+  "doi:10.1016/j.ejmp.2026.107194": {
+   "firstSeen": "2026-10-21",
+   "title": "Introduce the first SPArc optimization algorithm for synchrotron accelerator based proton therapy system."
+  },
+  "title:introduce the first sparc optimization algorithm for synchrotron accelerator based proton therapy system": {
+   "firstSeen": "2026-10-21",
+   "title": "Introduce the first SPArc optimization algorithm for synchrotron accelerator based proton therapy system."
+  },
+  "doi:10.15439/2026f4871": {
+   "firstSeen": "2026-10-21",
+   "title": "Multi-Task U-Net Architecture for Tumor Segmentation and Recognition based on Fractal Analysis and Nonlinear Reaction-Di"
+  },
+  "title:multi task u net architecture for tumor segmentation and recognition based on fractal analysis and nonlinear reaction diffusion": {
+   "firstSeen": "2026-10-21",
+   "title": "Multi-Task U-Net Architecture for Tumor Segmentation and Recognition based on Fractal Analysis and Nonlinear Reaction-Di"
+  },
+  "doi:10.7936/7w79-6890": {
+   "firstSeen": "2026-10-21",
+   "title": "Physics-Informed Deep Learning for Computational Image Analysis and Personalized Medicine in Neuro-Oncology"
+  },
+  "title:physics informed deep learning for computational image analysis and personalized medicine in neuro oncology": {
+   "firstSeen": "2026-10-21",
+   "title": "Physics-Informed Deep Learning for Computational Image Analysis and Personalized Medicine in Neuro-Oncology"
+  },
+  "doi:10.1007/s40314-026-03860-9": {
+   "firstSeen": "2026-10-21",
+   "title": "Mathematical and computational modeling of head and neck cancer for personalized therapy"
+  },
+  "title:mathematical and computational modeling of head and neck cancer for personalized therapy": {
+   "firstSeen": "2026-10-21",
+   "title": "Mathematical and computational modeling of head and neck cancer for personalized therapy"
+  },
+  "doi:10.58088/prtk-3552": {
+   "firstSeen": "2026-10-21",
+   "title": "Mathematical modeling of drug distribution and their interaction with lymphocytes and HIV inside the lymph nodes"
+  },
+  "title:mathematical modeling of drug distribution and their interaction with lymphocytes and hiv inside the lymph nodes": {
+   "firstSeen": "2026-10-21",
+   "title": "Mathematical modeling of drug distribution and their interaction with lymphocytes and HIV inside the lymph nodes"
+  },
+  "doi:10.64898/2026.09.07.749974": {
+   "firstSeen": "2026-10-21",
+   "title": "DiffDose: Differentiable Programming for Personalized Dose-Regimen Optimal Control"
+  },
+  "title:diffdose differentiable programming for personalized dose regimen optimal control": {
+   "firstSeen": "2026-10-21",
+   "title": "DiffDose: Differentiable Programming for Personalized Dose-Regimen Optimal Control"
+  },
+  "doi:10.1073/pnas.2532976123": {
+   "firstSeen": "2026-10-21",
+   "title": "Integrating tumor–immune mechanistic modeling with transcriptomics reveals pattern-driven prognostic biomarkers in tumor"
+  },
+  "title:integrating tumor immune mechanistic modeling with transcriptomics reveals pattern driven prognostic biomarkers in tumors": {
+   "firstSeen": "2026-10-21",
+   "title": "Integrating tumor–immune mechanistic modeling with transcriptomics reveals pattern-driven prognostic biomarkers in tumor"
+  },
+  "arxiv:2609.07526": {
+   "firstSeen": "2026-10-21",
+   "title": "Numerical approximations of population size distributions for multi-type branching processes"
+  },
+  "title:numerical approximations of population size distributions for multi type branching processes": {
+   "firstSeen": "2026-10-21",
+   "title": "Numerical approximations of population size distributions for multi-type branching processes"
+  },
+  "doi:10.64898/2026.08.31.747916": {
+   "firstSeen": "2026-10-21",
+   "title": "QuickSeg: A fast, versatile and accurate algorithm for genomic copy number segmentation using dynamic programming"
+  },
+  "title:quickseg a fast versatile and accurate algorithm for genomic copy number segmentation using dynamic programming": {
+   "firstSeen": "2026-10-21",
+   "title": "QuickSeg: A fast, versatile and accurate algorithm for genomic copy number segmentation using dynamic programming"
+  },
+  "doi:10.1136/jitc-2026-015357": {
+   "firstSeen": "2026-10-21",
+   "title": "Mechanistic modeling of tumor immune microenvironment reveals strategies to enhance antibody-drug conjugates' efficacy."
+  },
+  "title:mechanistic modeling of tumor immune microenvironment reveals strategies to enhance antibody drug conjugates efficacy": {
+   "firstSeen": "2026-10-21",
+   "title": "Mechanistic modeling of tumor immune microenvironment reveals strategies to enhance antibody-drug conjugates' efficacy."
+  },
+  "doi:10.1016/j.cma.2026.119305": {
+   "firstSeen": "2026-10-21",
+   "title": "An MRI-informed poromechanical model for organ-scale prediction of glioma growth"
+  },
+  "arxiv:2605.05013": {
+   "firstSeen": "2026-10-21",
+   "title": "An MRI-informed poromechanical model for organ-scale prediction of glioma growth"
+  },
+  "title:an mri informed poromechanical model for organ scale prediction of glioma growth": {
+   "firstSeen": "2026-10-21",
+   "title": "An MRI-informed poromechanical model for organ-scale prediction of glioma growth"
+  },
+  "doi:10.64898/2026.08.18.745434": {
+   "firstSeen": "2026-10-21",
+   "title": "Evolutionary implications of phenotype switching for growth and survival of tumors in stochastic environments"
+  },
+  "title:evolutionary implications of phenotype switching for growth and survival of tumors in stochastic environments": {
+   "firstSeen": "2026-10-21",
+   "title": "Evolutionary implications of phenotype switching for growth and survival of tumors in stochastic environments"
+  },
+  "doi:10.1080/10255842.2026.2717311": {
+   "firstSeen": "2026-10-21",
+   "title": "A generalized multilayer reaction–diffusion model for tumor dynamics under hyperthermic therapy with spatial heterogenei"
+  },
+  "title:a generalized multilayer reaction diffusion model for tumor dynamics under hyperthermic therapy with spatial heterogeneity": {
+   "firstSeen": "2026-10-21",
+   "title": "A generalized multilayer reaction–diffusion model for tumor dynamics under hyperthermic therapy with spatial heterogenei"
+  },
+  "doi:10.1016/j.oraloncology.2026.108112": {
+   "firstSeen": "2026-10-21",
+   "title": "Association of glycaemic control with post-radiation nasopharyngeal necrosis in diabetic patients with nasopharyngeal ca"
+  },
+  "title:association of glycaemic control with post radiation nasopharyngeal necrosis in diabetic patients with nasopharyngeal carcinoma": {
+   "firstSeen": "2026-10-21",
+   "title": "Association of glycaemic control with post-radiation nasopharyngeal necrosis in diabetic patients with nasopharyngeal ca"
+  },
+  "doi:10.1093/bioinformatics/btag101": {
+   "firstSeen": "2026-10-21",
+   "title": "Literature-derived, context-aware gene regulatory networks improve biological predictions and mathematical modeling."
+  },
+  "title:literature derived context aware gene regulatory networks improve biological predictions and mathematical modeling": {
+   "firstSeen": "2026-10-21",
+   "title": "Literature-derived, context-aware gene regulatory networks improve biological predictions and mathematical modeling."
+  },
+  "doi:10.1093/ejendo/lvag096.1347": {
+   "firstSeen": "2026-10-21",
+   "title": "EP1083 - ECE_3451 - Management of Cushing syndrome of different etiologies—a single center real life experience: data fr"
+  },
+  "title:ep1083 ece 3451 management of cushing syndrome of different etiologies a single center real life experience data from ercusyn krakow database": {
+   "firstSeen": "2026-10-21",
+   "title": "EP1083 - ECE_3451 - Management of Cushing syndrome of different etiologies—a single center real life experience: data fr"
+  },
+  "doi:10.69882/adba.cem.2026076": {
+   "firstSeen": "2026-10-21",
+   "title": "A Bistable Reaction-Diffusion Analysis of Tumour to Determine Oncolytic Virotherapy Outcome"
+  },
+  "title:a bistable reaction diffusion analysis of tumour to determine oncolytic virotherapy outcome": {
+   "firstSeen": "2026-10-21",
+   "title": "A Bistable Reaction-Diffusion Analysis of Tumour to Determine Oncolytic Virotherapy Outcome"
+  },
+  "doi:10.1093/jimmun/vkag141.122": {
+   "firstSeen": "2026-10-21",
+   "title": "PKN1 is a Novel Therapeutic Target for the Optimal Control of GvHD 2251611"
+  },
+  "title:pkn1 is a novel therapeutic target for the optimal control of gvhd 2251611": {
+   "firstSeen": "2026-10-21",
+   "title": "PKN1 is a Novel Therapeutic Target for the Optimal Control of GvHD 2251611"
+  },
+  "doi:10.1016/j.neunet.2026.109399": {
+   "firstSeen": "2026-10-21",
+   "title": "Mathematical modeling of cancer-bacterial therapy: Analysis and numerical simulation via physics-informed neural network"
+  },
+  "title:mathematical modeling of cancer bacterial therapy analysis and numerical simulation via physics informed neural networks": {
+   "firstSeen": "2026-10-21",
+   "title": "Mathematical modeling of cancer-bacterial therapy: Analysis and numerical simulation via physics-informed neural network"
+  },
+  "arxiv:2607.13944": {
+   "firstSeen": "2026-10-21",
+   "title": "Propagation dynamics of an acid-mediated invasion model with degenerate tumor diffusion"
+  },
+  "title:propagation dynamics of an acid mediated invasion model with degenerate tumor diffusion": {
+   "firstSeen": "2026-10-21",
+   "title": "Propagation dynamics of an acid-mediated invasion model with degenerate tumor diffusion"
+  },
+  "arxiv:2607.13877": {
+   "firstSeen": "2026-10-21",
+   "title": "AI-Augmented Adaptive Digital Twin Modeling for Brain Tumor Evolution Prediction and Treatment Scheduling"
+  },
+  "title:ai augmented adaptive digital twin modeling for brain tumor evolution prediction and treatment scheduling": {
+   "firstSeen": "2026-10-21",
+   "title": "AI-Augmented Adaptive Digital Twin Modeling for Brain Tumor Evolution Prediction and Treatment Scheduling"
+  },
+  "doi:10.1007/978-3-032-41794-7_9": {
+   "firstSeen": "2026-10-21",
+   "title": "PhysiCell Validation of a Discrete-in-Continuous Mathematical Model for Cancer-on-Chip Experiments"
+  },
+  "title:physicell validation of a discrete in continuous mathematical model for cancer on chip experiments": {
+   "firstSeen": "2026-10-21",
+   "title": "PhysiCell Validation of a Discrete-in-Continuous Mathematical Model for Cancer-on-Chip Experiments"
+  },
+  "doi:10.62762/jnspm.2026.765432": {
+   "firstSeen": "2026-10-21",
+   "title": "Carbon Ion Hadron Therapy: Analytical Formulation of Tumor Regression in Pancreatic Cancer by Computed Tomography"
+  },
+  "title:carbon ion hadron therapy analytical formulation of tumor regression in pancreatic cancer by computed tomography": {
+   "firstSeen": "2026-10-21",
+   "title": "Carbon Ion Hadron Therapy: Analytical Formulation of Tumor Regression in Pancreatic Cancer by Computed Tomography"
+  },
+  "doi:10.1186/s12885-026-16748-y": {
+   "firstSeen": "2026-10-21",
+   "title": "Decoupling T cell cytotoxicity: a CCL21+ICAM1-based synthetic immune niche enhances tumor elimination by accelerating ly"
+  },
+  "title:decoupling t cell cytotoxicity a ccl21 icam1 based synthetic immune niche enhances tumor elimination by accelerating lytic hit delivery": {
+   "firstSeen": "2026-10-21",
+   "title": "Decoupling T cell cytotoxicity: a CCL21+ICAM1-based synthetic immune niche enhances tumor elimination by accelerating ly"
+  },
+  "doi:10.1007/s11538-026-01758-5": {
+   "firstSeen": "2026-10-21",
+   "title": "Oxygenation and Spatial Heterogeneity Shape Radiotherapy Protocol Ranking Through Phenotypic Adaptation."
+  },
+  "title:oxygenation and spatial heterogeneity shape radiotherapy protocol ranking through phenotypic adaptation": {
+   "firstSeen": "2026-10-21",
+   "title": "Oxygenation and Spatial Heterogeneity Shape Radiotherapy Protocol Ranking Through Phenotypic Adaptation."
+  },
+  "doi:10.1007/s11538-026-01703-6": {
+   "firstSeen": "2026-10-21",
+   "title": "Stacked Waves and Qualitative Analysis of an Oncolytic Virus-Immune Model."
+  },
+  "title:stacked waves and qualitative analysis of an oncolytic virus immune model": {
+   "firstSeen": "2026-10-21",
+   "title": "Stacked Waves and Qualitative Analysis of an Oncolytic Virus-Immune Model."
+  },
+  "doi:10.1016/j.compbiolchem.2026.109456": {
+   "firstSeen": "2026-10-21",
+   "title": "Magnetized blood flow with Jeffrey ternary hybrid nanofluid in an inclined multi-constricted artery for therapeutic tran"
+  },
+  "title:magnetized blood flow with jeffrey ternary hybrid nanofluid in an inclined multi constricted artery for therapeutic transport applications": {
+   "firstSeen": "2026-10-21",
+   "title": "Magnetized blood flow with Jeffrey ternary hybrid nanofluid in an inclined multi-constricted artery for therapeutic tran"
+  },
+  "doi:10.1016/j.matcom.2026.09.033": {
+   "firstSeen": "2026-10-21",
+   "title": "An advanced reaction–diffusion-chemotaxis model of tumour-immune interactions: Application of the Trinition-Laplacian Be"
+  },
+  "title:an advanced reaction diffusion chemotaxis model of tumour immune interactions application of the trinition laplacian beltrami": {
+   "firstSeen": "2026-10-21",
+   "title": "An advanced reaction–diffusion-chemotaxis model of tumour-immune interactions: Application of the Trinition-Laplacian Be"
+  },
+  "arxiv:2609.34451": {
+   "firstSeen": "2026-10-21",
+   "title": "Modeling Whole-Slide Images as Dynamic Tumor Microenvironment Fields"
+  },
+  "title:modeling whole slide images as dynamic tumor microenvironment fields": {
+   "firstSeen": "2026-10-21",
+   "title": "Modeling Whole-Slide Images as Dynamic Tumor Microenvironment Fields"
+  },
+  "arxiv:2609.32810": {
+   "firstSeen": "2026-10-21",
+   "title": "OpenTumorBoard: A Real-World Benchmark of Multidisciplinary Tumor Board Discussion Trajectories"
+  },
+  "title:opentumorboard a real world benchmark of multidisciplinary tumor board discussion trajectories": {
+   "firstSeen": "2026-10-21",
+   "title": "OpenTumorBoard: A Real-World Benchmark of Multidisciplinary Tumor Board Discussion Trajectories"
+  },
+  "arxiv:2609.22363": {
+   "firstSeen": "2026-10-21",
+   "title": "2D reaction-diffusion model-based biopsy simulation for dynamic tumor growth parameter estimation"
+  },
+  "title:2d reaction diffusion model based biopsy simulation for dynamic tumor growth parameter estimation": {
+   "firstSeen": "2026-10-21",
+   "title": "2D reaction-diffusion model-based biopsy simulation for dynamic tumor growth parameter estimation"
+  },
+  "doi:10.3390/curroncol33090566": {
+   "firstSeen": "2026-10-21",
+   "title": "Digital Twins for Targeted Therapy in Head and Neck Cancer: From Molecular Stratification to Resistance-Aware Combinatio"
+  },
+  "title:digital twins for targeted therapy in head and neck cancer from molecular stratification to resistance aware combination strategies": {
+   "firstSeen": "2026-10-21",
+   "title": "Digital Twins for Targeted Therapy in Head and Neck Cancer: From Molecular Stratification to Resistance-Aware Combinatio"
+  },
+  "doi:10.1080/19490976.2026.2728331": {
+   "firstSeen": "2026-10-21",
+   "title": "Pangenome analysis reveals both niche-specific \"specialists\" and microbial \"side hustlers\" in colorectal cancer microbio"
+  },
+  "title:pangenome analysis reveals both niche specific specialists and microbial side hustlers in colorectal cancer microbiomes": {
+   "firstSeen": "2026-10-21",
+   "title": "Pangenome analysis reveals both niche-specific \"specialists\" and microbial \"side hustlers\" in colorectal cancer microbio"
+  },
+  "arxiv:2609.14720": {
+   "firstSeen": "2026-10-21",
+   "title": "Shape- and Cation-Engineered Ferrite Nanoparticles for Enhanced Theranostic Performance in Ovarian Cancer Tumor-Mimickin"
+  },
+  "title:shape and cation engineered ferrite nanoparticles for enhanced theranostic performance in ovarian cancer tumor mimicking phantom": {
+   "firstSeen": "2026-10-21",
+   "title": "Shape- and Cation-Engineered Ferrite Nanoparticles for Enhanced Theranostic Performance in Ovarian Cancer Tumor-Mimickin"
+  },
+  "doi:10.1016/j.mbs.2026.109805": {
+   "firstSeen": "2026-10-21",
+   "title": "Revisiting Fulvestrant Dosing: Biomarker-Driven Mathematical PK/PD Modeling and Dosing Optimization in Estrogen Receptor"
+  },
+  "title:revisiting fulvestrant dosing biomarker driven mathematical pk pd modeling and dosing optimization in estrogen receptor positive breast cancer": {
+   "firstSeen": "2026-10-21",
+   "title": "Revisiting Fulvestrant Dosing: Biomarker-Driven Mathematical PK/PD Modeling and Dosing Optimization in Estrogen Receptor"
+  },
+  "doi:10.64898/2026.09.10.26362768": {
+   "firstSeen": "2026-10-21",
+   "title": "Effective tumor kinetics inferred from single routine H&E biopsies enable counterfactual virtual radiotherapy trials"
+  },
+  "title:effective tumor kinetics inferred from single routine h e biopsies enable counterfactual virtual radiotherapy trials": {
+   "firstSeen": "2026-10-21",
+   "title": "Effective tumor kinetics inferred from single routine H&E biopsies enable counterfactual virtual radiotherapy trials"
+  },
+  "arxiv:2609.09343": {
+   "firstSeen": "2026-10-21",
+   "title": "Persistence of n-Species Lotka-Volterra Models with Periodic Pulses"
+  },
+  "title:persistence of n species lotka volterra models with periodic pulses": {
+   "firstSeen": "2026-10-21",
+   "title": "Persistence of n-Species Lotka-Volterra Models with Periodic Pulses"
+  },
+  "doi:10.5890/jvtsd.2027.03.007": {
+   "firstSeen": "2026-10-21",
+   "title": "Malignant Tumours Spread Model Balancing Concentrations of the Invasive Cells and Extracellular Matrix"
+  },
+  "title:malignant tumours spread model balancing concentrations of the invasive cells and extracellular matrix": {
+   "firstSeen": "2026-10-21",
+   "title": "Malignant Tumours Spread Model Balancing Concentrations of the Invasive Cells and Extracellular Matrix"
+  },
+  "doi:10.1002/mp.70643": {
+   "firstSeen": "2026-10-21",
+   "title": "Exploratory personalized radiobiological modeling of bystander and immune effects to inform SFRT-SBRT scheduling."
+  },
+  "title:exploratory personalized radiobiological modeling of bystander and immune effects to inform sfrt sbrt scheduling": {
+   "firstSeen": "2026-10-21",
+   "title": "Exploratory personalized radiobiological modeling of bystander and immune effects to inform SFRT-SBRT scheduling."
+  },
+  "doi:10.1007/s00521-026-12453-w": {
+   "firstSeen": "2026-10-21",
+   "title": "RDA-ResNet50: reaction-diffusion-attention-based ResNet50 for skin cancer diagnosis"
+  },
+  "title:rda resnet50 reaction diffusion attention based resnet50 for skin cancer diagnosis": {
+   "firstSeen": "2026-10-21",
+   "title": "RDA-ResNet50: reaction-diffusion-attention-based ResNet50 for skin cancer diagnosis"
+  },
+  "arxiv:2608.30796": {
+   "firstSeen": "2026-10-21",
+   "title": "Tumor boundary instability induced by pressure feedback"
+  },
+  "title:tumor boundary instability induced by pressure feedback": {
+   "firstSeen": "2026-10-21",
+   "title": "Tumor boundary instability induced by pressure feedback"
+  },
+  "doi:10.1088/1361-6560/ae9687": {
+   "firstSeen": "2026-10-21",
+   "title": "Towards a clinically practical computational platform for systematically adapting radiation therapy for glioma patients."
+  },
+  "title:towards a clinically practical computational platform for systematically adapting radiation therapy for glioma patients": {
+   "firstSeen": "2026-10-21",
+   "title": "Towards a clinically practical computational platform for systematically adapting radiation therapy for glioma patients."
+  },
+  "doi:10.5167/uzh-435673": {
+   "firstSeen": "2026-10-21",
+   "title": "Replication Fork Plasticity as a Therapeutic Vulnerability in Acute Myeloid Leukemia"
+  },
+  "title:replication fork plasticity as a therapeutic vulnerability in acute myeloid leukemia": {
+   "firstSeen": "2026-10-21",
+   "title": "Replication Fork Plasticity as a Therapeutic Vulnerability in Acute Myeloid Leukemia"
+  },
+  "arxiv:2608.16607": {
+   "firstSeen": "2026-10-21",
+   "title": "Interactive Whole Slide Images for RL-based Tumour Segmentation"
+  },
+  "title:interactive whole slide images for rl based tumour segmentation": {
+   "firstSeen": "2026-10-21",
+   "title": "Interactive Whole Slide Images for RL-based Tumour Segmentation"
+  },
+  "doi:10.1158/0008-5472.can-26-1086": {
+   "firstSeen": "2026-10-21",
+   "title": "Immune Circuit Rewiring by HDAC Inhibition Enables Response to Dual Checkpoint Blockade in Metastatic Breast Cancer."
+  },
+  "title:immune circuit rewiring by hdac inhibition enables response to dual checkpoint blockade in metastatic breast cancer": {
+   "firstSeen": "2026-10-21",
+   "title": "Immune Circuit Rewiring by HDAC Inhibition Enables Response to Dual Checkpoint Blockade in Metastatic Breast Cancer."
+  },
+  "arxiv:2608.09142": {
+   "firstSeen": "2026-10-21",
+   "title": "An Agentic Generative Large Language Model for Treatment Planning of Colorectal Cancer"
+  },
+  "title:an agentic generative large language model for treatment planning of colorectal cancer": {
+   "firstSeen": "2026-10-21",
+   "title": "An Agentic Generative Large Language Model for Treatment Planning of Colorectal Cancer"
+  },
+  "doi:10.1016/j.mbs.2026.109785": {
+   "firstSeen": "2026-10-21",
+   "title": "Hierarchical mathematical modelling of patients with myeloproliferative neoplasms captures interferon-α treatment respon"
+  },
+  "title:hierarchical mathematical modelling of patients with myeloproliferative neoplasms captures interferon α treatment responses and allows for personalised and population predictions": {
+   "firstSeen": "2026-10-21",
+   "title": "Hierarchical mathematical modelling of patients with myeloproliferative neoplasms captures interferon-α treatment respon"
+  },
+  "doi:10.1038/s41598-026-51555-2": {
+   "firstSeen": "2026-10-21",
+   "title": "Modelling the impact of awareness campaigns on HPV transmission dynamics: a neural network-enhanced mathematical model."
+  },
+  "title:modelling the impact of awareness campaigns on hpv transmission dynamics a neural network enhanced mathematical model": {
+   "firstSeen": "2026-10-21",
+   "title": "Modelling the impact of awareness campaigns on HPV transmission dynamics: a neural network-enhanced mathematical model."
+  },
+  "doi:10.1002/hsr2.72884": {
+   "firstSeen": "2026-10-21",
+   "title": "Advancing Tumor Treatment Through Artificial Intelligence and Mathematical Modeling: A Comprehensive Review."
+  },
+  "title:advancing tumor treatment through artificial intelligence and mathematical modeling a comprehensive review": {
+   "firstSeen": "2026-10-21",
+   "title": "Advancing Tumor Treatment Through Artificial Intelligence and Mathematical Modeling: A Comprehensive Review."
+  },
+  "arxiv:2607.20550": {
+   "firstSeen": "2026-10-21",
+   "title": "Beyond SBDD: Geometric Deep Learning in Polypharmacology and Multi-target Drug Design"
+  },
+  "title:beyond sbdd geometric deep learning in polypharmacology and multi target drug design": {
+   "firstSeen": "2026-10-21",
+   "title": "Beyond SBDD: Geometric Deep Learning in Polypharmacology and Multi-target Drug Design"
+  },
+  "doi:10.21275/sr26708113231": {
+   "firstSeen": "2026-10-21",
+   "title": "An Adaptive Hybrid Differential Transform Method for Variable-Order Fractional Reaction-Diffusion Models with Applicatio"
+  },
+  "title:an adaptive hybrid differential transform method for variable order fractional reaction diffusion models with applications to tumour growth and heat transfer": {
+   "firstSeen": "2026-10-21",
+   "title": "An Adaptive Hybrid Differential Transform Method for Variable-Order Fractional Reaction-Diffusion Models with Applicatio"
+  },
+  "arxiv:2607.04551": {
+   "firstSeen": "2026-10-21",
+   "title": "Dynamic Image-Informed Selection of Biomechanical Tumor Growth Models"
+  },
+  "title:dynamic image informed selection of biomechanical tumor growth models": {
+   "firstSeen": "2026-10-21",
+   "title": "Dynamic Image-Informed Selection of Biomechanical Tumor Growth Models"
+  },
+  "arxiv:2607.03813": {
+   "firstSeen": "2026-10-21",
+   "title": "Computational Oncology of Chemotaxis-Driven Tumour--Immune Spatial Patterning and Stability"
+  },
+  "title:computational oncology of chemotaxis driven tumour immune spatial patterning and stability": {
+   "firstSeen": "2026-10-21",
+   "title": "Computational Oncology of Chemotaxis-Driven Tumour--Immune Spatial Patterning and Stability"
+  },
+  "doi:10.62762/jam.2026.576302": {
+   "firstSeen": "2026-10-21",
+   "title": "Mathematical Formulation and Computational Implementation of a Fisher-KPP Model for Glioblastoma Invasion under Fraction"
+  },
+  "title:mathematical formulation and computational implementation of a fisher kpp model for glioblastoma invasion under fractionated radiotherapy": {
+   "firstSeen": "2026-10-21",
+   "title": "Mathematical Formulation and Computational Implementation of a Fisher-KPP Model for Glioblastoma Invasion under Fraction"
+  },
+  "arxiv:2610.07341": {
+   "firstSeen": "2026-10-21",
+   "title": "Identifiability of a linear dynamical reaction-diffusion system with directed interactions from the second-order statist"
+  },
+  "title:identifiability of a linear dynamical reaction diffusion system with directed interactions from the second order statistics of a single snapshot": {
+   "firstSeen": "2026-10-21",
+   "title": "Identifiability of a linear dynamical reaction-diffusion system with directed interactions from the second-order statist"
+  },
+  "doi:10.1111/mec.70580": {
+   "firstSeen": "2026-10-21",
+   "title": "Mosaic Accumulation of Somatic Genetic Variation and Estimates of Age in the Long-Lived Reef-Building Coral Acropora pal"
+  },
+  "title:mosaic accumulation of somatic genetic variation and estimates of age in the long lived reef building coral acropora palmata": {
+   "firstSeen": "2026-10-21",
+   "title": "Mosaic Accumulation of Somatic Genetic Variation and Estimates of Age in the Long-Lived Reef-Building Coral Acropora pal"
+  },
+  "doi:10.1038/s41467-026-77894-2": {
+   "firstSeen": "2026-10-21",
+   "title": "PIP5K-Ras bistability triggers plasma membrane symmetry breaking to define cellular polarity and regulate migration"
+  },
+  "title:pip5k ras bistability triggers plasma membrane symmetry breaking to define cellular polarity and regulate migration": {
+   "firstSeen": "2026-10-21",
+   "title": "PIP5K-Ras bistability triggers plasma membrane symmetry breaking to define cellular polarity and regulate migration"
+  },
+  "arxiv:2609.33307": {
+   "firstSeen": "2026-10-21",
+   "title": "A mechanistic interpretation of mutation risk across biological scales"
+  },
+  "title:a mechanistic interpretation of mutation risk across biological scales": {
+   "firstSeen": "2026-10-21",
+   "title": "A mechanistic interpretation of mutation risk across biological scales"
+  },
+  "arxiv:2610.02231": {
+   "firstSeen": "2026-10-21",
+   "title": "A coupled geometric surface and surface reaction-diffusion framework for modelling nuclear mechanics during confined cel"
+  },
+  "title:a coupled geometric surface and surface reaction diffusion framework for modelling nuclear mechanics during confined cell migration": {
+   "firstSeen": "2026-10-21",
+   "title": "A coupled geometric surface and surface reaction-diffusion framework for modelling nuclear mechanics during confined cel"
+  },
+  "arxiv:2609.30190": {
+   "firstSeen": "2026-10-21",
+   "title": "Learning the Maximum Tolerated Dose for Continuous Toxicity via Monotone Bayesian Trees"
+  },
+  "title:learning the maximum tolerated dose for continuous toxicity via monotone bayesian trees": {
+   "firstSeen": "2026-10-21",
+   "title": "Learning the Maximum Tolerated Dose for Continuous Toxicity via Monotone Bayesian Trees"
+  },
+  "doi:10.21203/rs.3.rs-10763447/v1": {
+   "firstSeen": "2026-10-21",
+   "title": "From Transcriptomics to Game-Theoretic Models of Treatment Resistance in Glioblastoma Organoids"
+  },
+  "title:from transcriptomics to game theoretic models of treatment resistance in glioblastoma organoids": {
+   "firstSeen": "2026-10-21",
+   "title": "From Transcriptomics to Game-Theoretic Models of Treatment Resistance in Glioblastoma Organoids"
+  },
+  "arxiv:2609.02489": {
+   "firstSeen": "2026-10-21",
+   "title": "A meshfree solver for coupled bulk-surface problems with self-organizing surface geometry"
+  },
+  "title:a meshfree solver for coupled bulk surface problems with self organizing surface geometry": {
+   "firstSeen": "2026-10-21",
+   "title": "A meshfree solver for coupled bulk-surface problems with self-organizing surface geometry"
+  },
+  "arxiv:2607.29394": {
+   "firstSeen": "2026-10-21",
+   "title": "Dense Temporal Contrast Synthesis via Conditioned Latent Transport"
+  },
+  "title:dense temporal contrast synthesis via conditioned latent transport": {
+   "firstSeen": "2026-10-21",
+   "title": "Dense Temporal Contrast Synthesis via Conditioned Latent Transport"
+  },
+  "doi:10.1007/s11538-026-01699-z": {
+   "firstSeen": "2026-10-21",
+   "title": "Personalized Spatiotemporal Radiotherapy for GBM: A PDE-Constrained Optimization Study"
+  },
+  "title:personalized spatiotemporal radiotherapy for gbm a pde constrained optimization study": {
+   "firstSeen": "2026-10-21",
+   "title": "Personalized Spatiotemporal Radiotherapy for GBM: A PDE-Constrained Optimization Study"
+  },
+  "doi:10.1016/j.actbio.2026.07.029": {
+   "firstSeen": "2026-10-21",
+   "title": "Cell Phenotype Phase Separation in Epithelial-Mesenchymal Transition-Mediated Collective Cell Migration."
+  },
+  "title:cell phenotype phase separation in epithelial mesenchymal transition mediated collective cell migration": {
+   "firstSeen": "2026-10-21",
+   "title": "Cell Phenotype Phase Separation in Epithelial-Mesenchymal Transition-Mediated Collective Cell Migration."
+  }
+ }
+}
