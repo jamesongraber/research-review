@@ -18,11 +18,11 @@ export default function contentPlugin({ dir = 'content' } = {}) {
     },
     load(id) {
       if (id !== RESOLVED) return;
-      const { notes, items, subjects, errors, warnings, files } = loadContent(contentDir);
+      const { notes, items, subjects, tours, errors, warnings, files } = loadContent(contentDir);
       for (const f of files) this.addWatchFile(f);
       for (const w of warnings) this.warn(w);
       if (errors.length) this.error(`Content errors:\n  ${errors.join('\n  ')}`);
-      return `export default ${JSON.stringify({ notes, items, subjects })};`;
+      return `export default ${JSON.stringify({ notes, items, subjects, tours })};`;
     },
     configureServer(server) {
       server.watcher.add(contentDir);

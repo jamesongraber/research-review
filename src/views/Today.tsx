@@ -1,5 +1,5 @@
-import { notes, subjects, itemById, noteById, subjectName } from '../content';
-import { dueIds, newIds, newRemainingToday, nextDue, reviewsToday, totalSeen } from '../store';
+import { notes, subjects, itemById, noteById, subjectName, tours } from '../content';
+import { dueIds, newIds, newRemainingToday, nextDue, noteProgress, reviewsToday, totalSeen } from '../store';
 import { loadSession } from '../session';
 import { formatInterval } from '../util';
 
@@ -19,6 +19,17 @@ export function Today() {
   }
 
   const recent = [...notes].sort((a, b) => b.created.localeCompare(a.created)).slice(0, 5);
+
+  // The first tour stop that has not been fully studied yet.
+  const nextStops = tours.flatMap((tour) => {
+    for (const [ci, chapter] of tour.chapters.entries()) {
+      for (const [si, stop] of chapter.stops.entries()) {
+        const p = noteProgress(stop.note);
+        if (p.total === 0 || p.seen < p.total) return [{ tour, chapter, ci, si, note: noteById.get(stop.note)! }];
+      }
+    }
+    return [];
+  });
 
   return (
     <div class="page">
@@ -66,6 +77,17 @@ export function Today() {
           </div>
         )}
       </section>
+
+      {nextStops.length > 0 && <h2>Continue the tour</h2>}
+      {nextStops.map(({ tour, chapter, ci, si, note }) => (
+        <a class="tour-next" href={`#/note/${note.id}`} key={tour.id}>
+          <span class="label">{tour.title}</span>
+          <span class="title">{note.title}</span>
+          <span class="meta">
+            Chapter {ci + 1}: {chapter.title} · stop {si + 1} of {chapter.stops.length}
+          </span>
+        </a>
+      ))}
 
       <h2>Recently added</h2>
       <ul class="list">

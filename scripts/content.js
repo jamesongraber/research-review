@@ -8,6 +8,7 @@ import { createHash } from 'node:crypto';
 import { parse as parseYaml } from 'yaml';
 import { Marked } from 'marked';
 import markedKatex from 'marked-katex-extension';
+import { loadTours } from './tours.js';
 
 const marked = new Marked({ gfm: true });
 marked.use(markedKatex({ throwOnError: true, nonStandard: true, output: 'html' }));
@@ -69,7 +70,7 @@ function padDisplayMath(md) {
   return out.join('\n');
 }
 
-function render(md, inline = false) {
+export function render(md, inline = false) {
   const src = padDisplayMath(md.trim());
   return inline ? marked.parseInline(src) : marked.parse(src);
 }
@@ -315,5 +316,10 @@ export function loadContent(contentDir) {
   }
 
   notes.sort((a, b) => (a.created || '9999').localeCompare(b.created || '9999') || a.title.localeCompare(b.title));
-  return { notes, items, subjects, errors, warnings, files };
+
+  const toursResult = loadTours(contentDir, new Set(notes.map((n) => n.id)), render);
+  errors.push(...toursResult.errors);
+  warnings.push(...toursResult.warnings);
+  const tourFiles = toursResult.tours.map((t) => join(contentDir, 'tours', `${t.id}.yaml`));
+  return { notes, items, subjects, tours: toursResult.tours, errors, warnings, files: [...files, ...tourFiles] };
 }

@@ -2,7 +2,7 @@
 title: Adaptive therapy as optimal control
 tags: [cancer, optimal-control, pontryagin, lotka-volterra, drug-resistance]
 created: 2026-07-22
-related: [pre-existing-resistance, cancer-somatic-evolution, mathematical-oncology-landscape, replicator-lotka-volterra]
+related: [pre-existing-resistance, cancer-somatic-evolution, mathematical-oncology-landscape, replicator-lotka-volterra, adaptive-therapy-trials-evidence, field-open-questions, chemotherapy-optimal-control-origins, kill-laws-and-scheduling-principles, immunotherapy-optimal-control]
 source: "Claude conversation: Daily evolutionary game theory course (2026-07)"
 ---
 
@@ -52,7 +52,7 @@ This keeps resistant growth at its slowest possible rate. It fails when the requ
 
 A numerical illustration with made-up parameters (not from the literature): $r_S = 0.3$, $r_R = 0.2$, $\beta = 10^{-3}$, $\delta = 1$, $n_{crit} = 100$, starting from $(n_S, n_R) = (90, 1)$. Failure times: MTD $\approx 27$, on/off (stop at half the initial size, resume at the initial size) $\approx 34.5$, containment $\approx 45$. The bound is $\approx 46.1$.
 
-If instead $n_{crit} \ge K_R$ and $0 \le r_S - r_R \le \delta$, the dose $u = (r_S - r_R)/\delta$ with $n = K_R$ makes both populations stationary, so the model tumor can be held indefinitely. Only in this regime can therapy hold $\dot n_R = 0$, as the chat's "singular arc" story described. A general version of "containment maximizes time to failure" is in the literature (I believe Viossat and Noble, 2021; unverified).
+If instead $n_{crit} \ge K_R$ and $0 \le r_S - r_R \le \delta$, the dose $u = (r_S - r_R)/\delta$ with $n = K_R$ makes both populations stationary, so the model tumor can be held indefinitely. Only in this regime can therapy hold $\dot n_R = 0$, as the chat's "singular arc" story described. The general version of "containment maximizes time to failure" is the comparison theorem of Viossat and Noble (2021), in [containment theorems](#/note/tumour-containment-theory).
 
 ### Pontryagin structure
 
@@ -68,7 +68,7 @@ The cross terms come from each population entering the other's competition term.
 
 ### Clinical status
 
-The best-known trial is Zhang et al. (2017), a small pilot study in metastatic castration-resistant prostate cancer with abiraterone. It used an on/off rule: stop dosing once PSA fell substantially (about 50% from baseline), and resume when it returned to baseline. These details are recalled from memory and unverified, and no outcomes are stated here. The on/off design is a feedback heuristic, so it is **not evidence** that the Pontryagin solution is bang-bang. Patient parameters ($r_S, r_R, \beta, \delta$) are hard to estimate, so the model gives qualitative structure rather than patient-specific switching times. Adaptive therapy is active research, not settled protocol.
+The best-known trial is Zhang et al. (2017), a small pilot study in metastatic castration-resistant prostate cancer with abiraterone. It used an on/off rule: stop dosing once PSA fell substantially (about 50% from baseline), and resume when it returned to baseline. The trial, its 2022 update and the critiques are in [the trials note](#/note/adaptive-therapy-trials-evidence). The on/off design is a feedback heuristic, so it is **not evidence** that the Pontryagin solution is bang-bang. Patient parameters ($r_S, r_R, \beta, \delta$) are hard to estimate, so the model gives qualitative structure rather than patient-specific switching times. Adaptive therapy is active research, not settled protocol.
 
 ## Cards
 

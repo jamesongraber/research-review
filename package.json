@@ -9,7 +9,8 @@
     "build": "npm run check && tsc --noEmit && vite build",
     "preview": "vite preview --host",
     "check": "node scripts/check-content.js",
-    "icons": "pwa-assets-generator --preset minimal-2023 public/favicon.svg"
+    "icons": "pwa-assets-generator --preset minimal-2023 public/favicon.svg",
+    "mine": "node scripts/mine-literature.mjs"
   },
   "dependencies": {
     "katex": "^0.18.10",

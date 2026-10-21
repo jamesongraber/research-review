@@ -2,7 +2,7 @@
 title: Pre-existing drug resistance (Luria–Delbrück)
 tags: [cancer, drug-resistance, branching-processes, population-genetics]
 created: 2026-07-22
-related: [cancer-somatic-evolution, adaptive-therapy-control, moran-fixation-probability]
+related: [cancer-somatic-evolution, adaptive-therapy-control, moran-fixation-probability, kill-laws-and-scheduling-principles, branching-process-resistance, multistage-carcinogenesis, neutral-evolution-debate, evolutionary-steering-collateral-sensitivity, cml-dynamics-treatment-free-remission]
 source: "Claude conversation: Daily evolutionary game theory course (2026-07)"
 ---
 

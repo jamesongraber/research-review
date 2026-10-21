@@ -2,7 +2,7 @@
 title: Dirac concentration and constrained Hamilton–Jacobi equations
 tags: [cancer, hamilton-jacobi, viscosity-solutions, adaptive-dynamics, asymptotic-analysis]
 created: 2026-08-25
-related: [mathematical-oncology-landscape, cancer-somatic-evolution, adaptive-therapy-control, adaptive-dynamics, entropy-solutions-physical-entropy, hj-wasserstein-applications]
+related: [mathematical-oncology-landscape, cancer-somatic-evolution, adaptive-therapy-control, adaptive-dynamics, entropy-solutions-physical-entropy, hj-wasserstein-applications, mean-field-games-in-oncology, leukaemia-stem-cell-models, constrained-hj-uniqueness-regularity, lorz-clairambault-resistance-model, pouchol-optimal-control-ide, space-and-trait-models]
 source: "Claude conversation: Mathematical modeling of cancer evolution (2026-08)"
 ---
 

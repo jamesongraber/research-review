@@ -1,0 +1,68 @@
+{
+  "$comment": "Queries and keyword lists for scripts/mine-literature.mjs. Edit freely; the script never needs changes for new topics.",
+  "contact": "jamesongraber@gmail.com",
+  "queries": {
+    "arxiv": [
+      "(abs:cancer OR abs:tumor OR abs:tumour OR abs:oncology OR abs:chemotherapy) AND (abs:\"game theory\" OR abs:\"evolutionary game\" OR abs:Stackelberg OR abs:\"mean field game\" OR abs:\"mean-field game\" OR abs:\"replicator\")",
+      "(abs:cancer OR abs:tumor OR abs:tumour OR abs:chemotherapy OR abs:\"adaptive therapy\") AND (abs:\"optimal control\" OR abs:\"Hamilton-Jacobi\" OR abs:Pontryagin OR abs:\"dynamic programming\" OR abs:\"viability\" OR abs:\"reinforcement learning\")",
+      "(abs:cancer OR abs:tumor OR abs:tumour OR abs:glioma OR abs:leukemia) AND (abs:\"free boundary\" OR abs:\"Hele-Shaw\" OR abs:\"phenotype-structured\" OR abs:\"reaction-diffusion\" OR abs:\"branching process\" OR abs:\"integro-differential\" OR abs:\"Lotka-Volterra\" OR abs:\"selection-mutation\")",
+      "(abs:\"drug resistance\" OR abs:\"adaptive therapy\" OR abs:\"tumor-immune\" OR abs:\"tumour-immune\" OR abs:immunotherapy) AND (abs:\"mathematical model\" OR abs:\"differential equation\" OR abs:\"evolutionary dynamics\")"
+    ],
+    "europepmc": [
+      "(cancer OR tumour OR tumor OR neoplasm) AND (\"game theory\" OR \"evolutionary game\" OR \"Stackelberg\" OR \"mean field game\" OR \"replicator dynamics\" OR \"evolutionary dynamics\" OR \"adaptive therapy\" OR \"evolutionary therapy\")",
+      "(cancer OR tumour OR tumor OR chemotherapy OR radiotherapy OR immunotherapy) AND (\"optimal control\" OR \"Hamilton-Jacobi\" OR \"Pontryagin\" OR \"dynamic programming\" OR \"model predictive control\")",
+      "(cancer OR tumour OR tumor OR glioma OR leukaemia OR leukemia OR metastasis) AND (\"mathematical model\" OR \"mathematical modelling\" OR \"mathematical modeling\") AND (\"differential equation\" OR \"free boundary\" OR \"reaction-diffusion\" OR \"branching process\" OR \"phenotype-structured\" OR \"Lotka-Volterra\" OR \"partial differential\")"
+    ],
+    "openalex": [
+      "(cancer OR tumor OR tumour) AND (\"game theory\" OR \"evolutionary game\" OR Stackelberg OR \"mean field game\" OR \"adaptive therapy\" OR \"replicator dynamics\")",
+      "(cancer OR tumor OR tumour OR chemotherapy) AND (\"optimal control\" OR \"Hamilton-Jacobi\" OR Pontryagin OR \"dynamic programming\")",
+      "(cancer OR tumor OR tumour OR glioma OR leukemia) AND (\"free boundary\" OR \"Hele-Shaw\" OR \"phenotype-structured\" OR \"reaction-diffusion\" OR \"branching process\" OR \"integro-differential\")"
+    ],
+    "semanticscholar": [
+      "(cancer | tumor | tumour) + (\"game theory\" | \"evolutionary game\" | Stackelberg | \"mean field game\" | \"adaptive therapy\")",
+      "(cancer | tumor | tumour | chemotherapy) + (\"optimal control\" | \"Hamilton-Jacobi\" | Pontryagin | \"dynamic programming\")",
+      "(cancer | tumor | tumour | glioma | leukemia) + (\"free boundary\" | \"Hele-Shaw\" | \"phenotype-structured\" | \"reaction-diffusion\" | \"branching process\")"
+    ]
+  },
+  "required": {
+    "$comment": "A paper is kept only if its title+abstract matches at least one term from EACH group.",
+    "cancer": ["cancer", "tumor", "tumour", "oncolog", "carcinoma", "leukemia", "leukaemia", "glioma", "glioblastoma", "melanoma", "metasta", "neoplas", "chemotherap", "radiotherap", "immunotherap", "adaptive therapy", "sarcoma", "lymphoma", "myeloma"],
+    "math": ["game", "optimal control", "control theory", "controller", "differential equation", "ode ", "pde", "hamilton", "jacobi", "bellman", "pontryagin", "dynamic programming", "mean field", "mean-field", "replicator", "evolutionary dynamics", "lotka", "volterra", "branching process", "stochastic process", "moran", "fixation", "free boundary", "hele-shaw", "reaction-diffusion", "reaction–diffusion", "phenotype-structured", "structured population", "integro-differential", "viscosity solution", "stackelberg", "nash", "equilibrium", "bifurcation", "stability analysis", "mathematical model", "mathematical oncology", "optimal transport", "wasserstein", "gradient flow", "reinforcement learning", "markov decision", "model predictive", "viability", "reachab", "adaptive dynamics", "fitness landscape", "eco-evolutionary"]
+  },
+  "bonus": {
+    "$comment": "Extra score for terms close to the tour's core; weights add to the base score (number of distinct math terms matched).",
+    "adaptive therapy": 3,
+    "stackelberg": 3,
+    "mean field game": 4,
+    "mean-field game": 4,
+    "evolutionary game": 3,
+    "optimal control": 2,
+    "hamilton-jacobi": 3,
+    "hamilton–jacobi": 3,
+    "viscosity": 2,
+    "phenotype-structured": 3,
+    "free boundary": 2,
+    "hele-shaw": 3,
+    "pontryagin": 2,
+    "dynamic programming": 2,
+    "branching process": 2,
+    "differential game": 3,
+    "replicator": 2,
+    "drug resistance": 1,
+    "cost of resistance": 2,
+    "competitive release": 2,
+    "wasserstein": 2,
+    "optimal transport": 2
+  },
+  "themes": {
+    "$comment": "Keyword votes that map a paper to a tour chapter id (content/tours/*.yaml). The chapter with most votes wins; ties go to the first listed.",
+    "growth-and-control": ["gompertz", "growth law", "log-kill", "norton", "angiogen", "anti-angiogenic", "metronomic", "pontryagin", "bang-bang", "singular arc", "optimal control", "chemotherapy schedul", "dose schedul", "radiotherapy", "fractionation"],
+    "stochastic-evolution": ["branching process", "luria", "delbr", "moran", "fixation", "waiting time", "mutation", "passenger", "driver", "neutral evolution", "clonal", "pre-existing", "collateral sensitivity", "steering", "sequential therapy", "persister", "phenotypic switching"],
+    "evolutionary-games": ["evolutionary game", "game theory", "replicator", "public good", "frequency-dependent", "frequency dependent", "stackelberg", "g-function", "g function", "ess", "payoff", "game assay", "cooperation", "spatial game", "eco-evolutionary"],
+    "adaptive-therapy": ["adaptive therapy", "competitive release", "cost of resistance", "containment", "intermittent", "treatment holiday", "abiraterone", "castrat", "psa", "evolutionary therapy", "extinction therapy", "first strike", "maximum tolerated dose", "mtd"],
+    "phenotype-structured": ["phenotype-structured", "phenotypically structured", "trait-structured", "integro-differential", "selection-mutation", "selection–mutation", "dirac", "concentration", "hamilton-jacobi", "hamilton–jacobi", "viscosity", "adaptive dynamics", "epimutation", "cell cycle", "age-structured", "circadian", "chronotherap"],
+    "tumor-immune": ["immune", "immunotherap", "t cell", "t-cell", "car-t", "car t", "checkpoint", "pd-1", "pd-l1", "cytokine", "dendritic", "oncolytic", "leukemia", "leukaemia", "cml", "aml", "imatinib", "tki", "hematopoie", "haematopoie"],
+    "spatial-mechanical": ["free boundary", "hele-shaw", "porous medium", "darcy", "brinkman", "cahn-hilliard", "cahn–hilliard", "phase-field", "phase field", "multiphase", "mixture", "mechanic", "pressure", "reaction-diffusion", "reaction–diffusion", "fisher-kpp", "glioma", "invasion", "angiogenesis", "metastas", "digital twin", "imaging", "mri", "patient-specific"],
+    "mean-field-and-beyond": ["mean field", "mean-field", "mckean", "major-minor", "major player", "wasserstein", "optimal transport", "differential game", "zero-sum", "viability", "reachab", "hamilton-jacobi-bellman", "hjb", "stochastic control", "model predictive", "reinforcement learning", "markov decision"]
+  }
+}

@@ -627,3 +627,339 @@ main:has(.review) {
 main.with-resume {
   padding-bottom: calc(var(--tabbar) + 90px + env(safe-area-inset-bottom));
 }
+
+/* Tour: chapters, timeline, open questions */
+.tour .back {
+  display: inline-block;
+  margin-top: 16px;
+  font-weight: 600;
+}
+.tour h1 {
+  margin-top: 8px;
+}
+.tour .meta {
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 0;
+}
+.tour .intro {
+  margin: 12px 0 4px;
+}
+.segmented {
+  display: flex;
+  margin: 14px 0 8px;
+  padding: 3px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface);
+}
+.segmented a {
+  flex: 1;
+  text-align: center;
+  padding: 8px 4px;
+  border-radius: 9px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+.segmented a.active {
+  background: var(--accent);
+  color: var(--accent-text);
+}
+button.chip {
+  font: inherit;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+button.chip.active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: var(--accent-text);
+}
+.toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin: 0 0 4px;
+}
+
+.chapter {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  margin: 12px 0;
+  overflow: hidden;
+}
+.chapter-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 12px 14px;
+  border: 0;
+  background: none;
+  color: var(--text);
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.chapter-head .num {
+  flex: none;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-weight: 700;
+}
+.chapter-head .text {
+  flex: 1;
+  min-width: 0;
+}
+.chapter-head .title {
+  display: block;
+  font-weight: 600;
+}
+.chapter-head .meta {
+  display: block;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.chapter-head .chev {
+  color: var(--muted);
+}
+.chapter-body {
+  padding: 0 14px 12px;
+  border-top: 1px solid var(--border);
+}
+.chapter-body > .prose {
+  padding-top: 10px;
+  font-size: 0.95rem;
+}
+.chapter-body .button.block {
+  margin-bottom: 0;
+}
+.stops {
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+}
+.stops li + li {
+  border-top: 1px solid var(--border);
+}
+.stops a {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  padding: 10px 0;
+  color: var(--text);
+}
+.stops .dot {
+  flex: none;
+  width: 10px;
+  height: 10px;
+  margin-top: 8px;
+  border-radius: 50%;
+  border: 2px solid var(--border);
+}
+.stops .dot.new {
+  border-color: var(--accent);
+}
+.stops .dot.partial {
+  border-color: var(--accent);
+  background: linear-gradient(90deg, var(--accent) 50%, transparent 50%);
+}
+.stops .dot.done {
+  border-color: var(--right);
+  background: var(--right);
+}
+.stops .stop-text {
+  min-width: 0;
+}
+.stops .title {
+  display: block;
+  font-weight: 600;
+}
+.stops .why {
+  display: block;
+  font-size: 0.9rem;
+}
+.stops .meta {
+  display: block;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.decade h2 {
+  margin-top: 20px;
+}
+.papers {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+.papers li {
+  display: flex;
+  gap: 12px;
+  padding: 10px 14px;
+}
+.papers li + li {
+  border-top: 1px solid var(--border);
+}
+.papers li.landmark {
+  background: var(--accent-soft);
+}
+.papers .year {
+  flex: none;
+  width: 3em;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  font-size: 0.9rem;
+  padding-top: 2px;
+}
+.papers .paper-body {
+  flex: 1;
+  min-width: 0;
+}
+.papers .title {
+  display: block;
+  font-weight: 600;
+  line-height: 1.35;
+}
+.papers .star {
+  color: var(--hard);
+}
+.papers .meta {
+  display: block;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+.papers .why {
+  font-size: 0.9rem;
+  margin: 4px 0 0;
+}
+.papers .links,
+.question .links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 6px;
+}
+.papers .links .chip,
+.question .links .chip {
+  font-size: 0.75rem;
+  padding: 2px 9px;
+}
+.papers.compact .year {
+  width: 2.8em;
+}
+
+.question {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  margin: 12px 0;
+}
+.question h3 {
+  font-size: 1.05rem;
+  margin: 0 0 6px;
+}
+.question h3 .num {
+  color: var(--accent);
+  margin-right: 4px;
+}
+.question .prose {
+  font-size: 0.95rem;
+}
+.chip.status-open {
+  background: var(--wrong-soft);
+  color: var(--wrong);
+}
+.chip.status-partly-answered,
+.chip.status-partial {
+  background: #fdf1dc;
+  color: var(--hard);
+}
+.chip.status-answered {
+  background: var(--right-soft);
+  color: var(--right);
+}
+
+/* Tour position shown on a note page that is a stop */
+.tour-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin: 12px 0 0;
+  padding: 10px 14px;
+  border-radius: 12px;
+  background: var(--accent-soft);
+}
+.tour-bar .where {
+  min-width: 0;
+  color: var(--text);
+}
+.tour-bar .label {
+  display: block;
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.tour-bar .chapter-name {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.tour-bar .steps {
+  flex: none;
+  display: flex;
+  gap: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Continue-the-tour card on Today */
+.tour-next {
+  display: block;
+  margin: 12px 0;
+  padding: 12px 16px;
+  border-radius: var(--radius);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+.tour-next .label {
+  display: block;
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.tour-next .title {
+  display: block;
+  font-weight: 600;
+}
+.tour-next .meta {
+  display: block;
+  color: var(--muted);
+  font-size: 0.85rem;
+}

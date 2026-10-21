@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'preact/hooks';
 import { Rating, type Grade } from 'ts-fsrs';
 import { itemById, noteById, subjectName, type Item, type QuizItem } from '../content';
-import { loadSession, newSession, saveSession, sessionKey, withOrder, type Session } from '../session';
+import { exitHref, loadSession, newSession, saveSession, scopeOf, withOrder, type Session } from '../session';
 import { getCard, preview, rate } from '../store';
 import { Html, formatInterval } from '../util';
 
@@ -15,15 +15,16 @@ const GRADES: { rating: Grade; label: string; cls: string }[] = [
   { rating: Rating.Easy, label: 'Easy', cls: 'easy' },
 ];
 
-export function Review({ noteId }: { noteId?: string }) {
+export function Review({ scopeKey }: { scopeKey: string }) {
   // Resume the saved session if there is one; every change is saved right away, so
   // leaving to read a note (or closing the app) and coming back picks up where it was.
-  const [s, setS] = useState<Session>(() => loadSession(sessionKey(noteId)) ?? newSession(noteId));
+  const [s, setS] = useState<Session>(() => loadSession(scopeKey) ?? newSession(scopeKey));
   useEffect(() => saveSession(s), [s]);
   // Guards against a double tap rating the same position twice before re-render.
   const gradedPos = useRef(-1);
 
-  const exit = noteId ? `#/note/${noteId}` : '#/';
+  const exit = exitHref(scopeKey);
+  const scope = scopeOf(scopeKey);
   const id = s.queue[s.pos];
   const item = id ? itemById.get(id) : undefined;
 
@@ -56,7 +57,7 @@ export function Review({ noteId }: { noteId?: string }) {
             : 'No cards are due and today’s new cards are used up.'}
         </p>
         <a class="button primary block" href={exit}>
-          {noteId ? 'Back to note' : 'Back to Today'}
+          {scope.kind === 'note' ? 'Back to note' : scope.kind === 'chapter' ? 'Back to tour' : 'Back to Today'}
         </a>
       </div>
     );

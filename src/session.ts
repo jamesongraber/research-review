@@ -1,13 +1,13 @@
 // In-progress review sessions, saved on every step so leaving a review (e.g. to read
 // the full explanation in a note) and coming back resumes exactly where it was.
-import { itemById, itemsByNote } from './content';
+import { chapterItems, itemById, itemsByNote, noteById, tourById, type Tour, type TourChapter } from './content';
 import { dueIds, newIds, newRemainingToday } from './store';
 import { shuffle } from './util';
 
 const KEY = 'research-review:sessions';
 
 export interface Session {
-  /** 'daily' for the Today queue, or 'note:<id>' for practicing one note. */
+  /** 'daily' for the Today queue, 'note:<id>' for one note, 'chapter:<tour>/<chapter>' for a tour chapter. */
   key: string;
   /** Local date the session was started; sessions don't carry over to another day. */
   day: string;
@@ -22,10 +22,52 @@ export interface Session {
   updated: number;
 }
 
+/** What a session covers, decoded from its key. */
+export type Scope =
+  | { kind: 'daily' }
+  | { kind: 'note'; noteId: string }
+  | { kind: 'chapter'; tourId: string; chapterId: string; tour?: Tour; chapter?: TourChapter };
+
 const today = () => new Date().toLocaleDateString('en-CA');
 
 export const sessionKey = (noteId?: string) => (noteId ? `note:${noteId}` : 'daily');
-export const sessionHref = (s: Session) => (s.key === 'daily' ? '#/review' : `#/review/${s.key.slice(5)}`);
+export const chapterKey = (tourId: string, chapterId: string) => `chapter:${tourId}/${chapterId}`;
+
+export function scopeOf(key: string): Scope {
+  if (key.startsWith('note:')) return { kind: 'note', noteId: key.slice(5) };
+  if (key.startsWith('chapter:')) {
+    const [tourId, chapterId] = key.slice(8).split('/');
+    const tour = tourById.get(tourId);
+    const chapter = tour?.chapters.find((c) => c.id === chapterId);
+    return { kind: 'chapter', tourId, chapterId, tour, chapter };
+  }
+  return { kind: 'daily' };
+}
+
+/** The review page for a session key. */
+export function sessionHref(s: Session | string) {
+  const scope = scopeOf(typeof s === 'string' ? s : s.key);
+  if (scope.kind === 'note') return `#/review/${scope.noteId}`;
+  if (scope.kind === 'chapter') return `#/review/chapter/${scope.tourId}/${scope.chapterId}`;
+  return '#/review';
+}
+
+/** Where leaving a review goes back to. */
+export function exitHref(key: string) {
+  const scope = scopeOf(key);
+  if (scope.kind === 'note') return `#/note/${scope.noteId}`;
+  if (scope.kind === 'chapter') return `#/tour/${scope.tourId}`;
+  return '#/';
+}
+
+/** Short label for the resume bar. */
+export function sessionLabel(key: string) {
+  const scope = scopeOf(key);
+  if (scope.kind === 'note') return `Practicing ${noteById.get(scope.noteId)?.title ?? 'a note'}`;
+  if (scope.kind === 'chapter') return `Practicing ${scope.chapter?.title ?? 'a chapter'}`;
+  return 'Review in progress';
+}
+
 export const remaining = (s: Session) => s.queue.length - s.pos;
 
 function loadAll(): Record<string, Session> {
@@ -78,14 +120,18 @@ export function loadSession(key: string): Session | undefined {
   return isActive(pruned) ? pruned : undefined;
 }
 
-export function newSession(noteId?: string): Session {
-  const queue = noteId
-    ? (itemsByNote.get(noteId) ?? []).map((i) => i.id)
-    : [...shuffle(dueIds()), ...newIds().slice(0, newRemainingToday())];
+function queueFor(key: string): string[] {
+  const scope = scopeOf(key);
+  if (scope.kind === 'note') return (itemsByNote.get(scope.noteId) ?? []).map((i) => i.id);
+  if (scope.kind === 'chapter') return scope.chapter ? chapterItems(scope.chapter).map((i) => i.id) : [];
+  return [...shuffle(dueIds()), ...newIds().slice(0, newRemainingToday())];
+}
+
+export function newSession(key = 'daily'): Session {
   return withOrder({
-    key: sessionKey(noteId),
+    key,
     day: today(),
-    queue,
+    queue: queueFor(key),
     pos: 0,
     revealed: false,
     chosen: null,

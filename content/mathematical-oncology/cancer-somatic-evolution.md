@@ -2,7 +2,7 @@
 title: Cancer as somatic evolution
 tags: [cancer, evolution, population-genetics, moran-process]
 created: 2026-07-22
-related: [pre-existing-resistance, adaptive-therapy-control, mathematical-oncology-landscape, moran-fixation-probability, adaptive-dynamics, singular-strategies-branching, evolutionary-graph-theory, replicator-dynamics]
+related: [pre-existing-resistance, adaptive-therapy-control, mathematical-oncology-landscape, moran-fixation-probability, adaptive-dynamics, singular-strategies-branching, evolutionary-graph-theory, replicator-dynamics, multistage-carcinogenesis, branching-process-resistance, neutral-evolution-debate, leukaemia-stem-cell-models, cml-dynamics-treatment-free-remission]
 source: "Claude conversation: Daily evolutionary game theory course (2026-07)"
 ---
 

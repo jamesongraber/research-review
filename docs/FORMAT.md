@@ -100,3 +100,52 @@ These follow the usual spaced-repetition advice (e.g. Wozniak's "20 rules", Matu
    read it in a couple of minutes and remember. Include the one example that makes it click.
 8. **Be correct.** These are things I'll remember for years. Prefer precise statements with their
    hypotheses ("if $A$ is symmetric") over slogans. If unsure of a fact, leave it out or flag it in the article.
+
+## Tours
+
+A **tour** is a curated, ordered path through notes with its own bibliography and list of open questions.
+It is one YAML file in `content/tours/<id>.yaml`; the app shows it under the Tour tab with three views
+(Chapters, Timeline, Open questions), lets you practise a whole chapter, and shows "Chapter n · stop i of k"
+with Prev/Next links on each note that is a stop.
+
+```yaml
+title: Cancer through games, control and PDEs      # required
+subtitle: A guided tour of …                        # optional
+intro: |                                            # optional Markdown
+  Why this tour exists and how to read it.
+chapters:                                           # at least one
+  - id: growth-and-control                          # lowercase slug, unique within the tour
+    title: Growth laws and the first control problems
+    period: 1825–1999                               # optional, shown in the chapter header
+    intro: |                                        # optional Markdown
+      What the chapter is about.
+    stops:                                          # ordered; each note id must exist
+      - note: tumor-growth-laws
+        why: One line on why this stop is here.     # optional, inline Markdown
+papers:                                             # the chronological bibliography (Timeline tab)
+  - year: 2014                                      # required, four digits
+    authors: Perthame, Quirós, Vázquez              # required; surnames
+    title: The Hele-Shaw asymptotics for mechanical models of tumor growth   # required
+    venue: Arch. Ration. Mech. Anal. 212:93–127     # optional
+    doi: 10.1007/s00205-013-0704-y                  # or arxiv: 1301.2612, or url: https://…
+    chapter: spatial-mechanical                     # optional; must be a chapter id
+    notes: [hele-shaw-limit-tumour-growth]          # optional; note ids that discuss it
+    landmark: true                                  # optional; starred and highlighted in the timeline
+    note: One line on what it contributed.          # optional, inline Markdown
+    key: perthame2014                               # optional; defaults to first author + year, must be unique
+open_questions:                                     # shown on the Open questions tab
+  - title: Short question
+    body: |                                         # Markdown
+      What is known, what is not, who says so.
+    chapter: spatial-mechanical                     # optional
+    notes: [hele-shaw-limit-tumour-growth]          # optional
+    status: open                                    # optional; open | partly answered | answered
+```
+
+The build fails on a stop, paper or question that names a note or chapter that does not exist, on a paper
+without year/authors/title, and on duplicate paper keys. It warns on a chapter with no stops and on a paper
+that links to a note which is not a stop of the tour. Practising a chapter uses the key
+`chapter:<tourId>/<chapterId>` for its review session, so chapter ids are best left stable.
+
+The bibliography doubles as the "already known" list for `npm run mine` (see `scripts/mine-literature.mjs`):
+papers whose DOI, arXiv id or title appear in any tour are not surfaced again.

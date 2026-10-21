@@ -14,6 +14,8 @@ or a file path. If nothing is given, use what we discussed in this session.
    text unchanged unless it's wrong, because rewording a question resets its review history.
 3. **Pick the subject folder** (`content/<subject>/`). Reuse an existing subject when it fits. A new subject
    needs only a new folder; add a display name to `content/subjects.yaml`.
+   Cancer-modelling notes go in `content/mathematical-oncology/`; if the note fits a chapter of the guided tour,
+   add it as a stop in `content/tours/cancer-games-control-pdes.yaml` (format: `docs/FORMAT.md`, "Tours").
 4. **Scope.** One note = one idea that's readable in five minutes. If the input covers several distinct ideas,
    write several notes and link them with `related:`.
 5. **Write the note.** Set `created:` to today's date. Put the research context ("came up while…") in `source:`.

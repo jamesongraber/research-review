@@ -2,7 +2,7 @@
 title: "Mathematical oncology: four research threads"
 tags: [cancer, research-landscape, stackelberg-games, mean-field-games, optimal-transport]
 created: 2026-08-25
-related: [selection-mutation-hamilton-jacobi, adaptive-therapy-control, cancer-somatic-evolution, potential-games, hj-wasserstein-applications]
+related: [selection-mutation-hamilton-jacobi, adaptive-therapy-control, cancer-somatic-evolution, potential-games, hj-wasserstein-applications, adaptive-therapy-trials-evidence, field-open-questions, mean-field-games-in-oncology, control-of-evolving-populations]
 source: "Claude conversation: Mathematical modeling of cancer evolution (2026-08)"
 ---
 
